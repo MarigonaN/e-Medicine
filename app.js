@@ -12,6 +12,6 @@ mongoose.connect('mongodb://localhost:27017/e-Medicine', {useNewUrlParser : true
 const userRouter = require('./routes/User');
 app.use('/user', userRouter);
 
-app.listen(3000, ()=>{
+app.listen(3003, ()=>{
     console.log('express server started')
 })
