@@ -10,7 +10,7 @@ const signToken = userID => {
     return JWT.sign({
         iss : "Marigona",
         sub : userID
-    }, "Marigona");
+    }, "Marigona", {expiresIn: "1h"});
 }
 userRouter.post('/register', (req, res) => {
     const { username, password, role } = req.body;
@@ -39,5 +39,39 @@ if(req.isAuthenticated()){
     res.status(200).json({isAuthenticated: true, user: {username, role}});
 }
 })
+
+userRouter.get('/logout', passport.authenticate('jwt', {session : false}),(req, res) => {  
+  res.clearCookie('access_token');
+  res.json({user: {username: "", role: ""}, success: true});
+    });
+
+    userRouter.post('/todo', passport.authenticate('jwt', {session : false}),(req, res) => {  
+       const todo = new Todo(req.body);
+       todo.save(err=>{
+           if(err)
+           res.status(500).json({message: {msgBody: "Error has occured", msgError: true}})
+           else{
+               req.user.todos.push(todo);
+               req.user.save(err=>{
+                   if(err)
+                   res.status(500).json({message: {msgBody: "Error has occured", msgError: true}})
+                   else{
+                       res.status(200).json({message: {msgBody: "Successfully created", msgError: false}})
+                   }
+               })
+           }
+       })
+          });
+
+
+          userRouter.get('/todos', passport.authenticate('jwt', {session : false}),(req, res) => {  
+           User.findById({_id: req.user._id}).populate('todos').exec((err, document)=>{
+               if(err)
+               res.status(500).json({message: {msgBody: "Error has occured", msgError: true}})
+               else{
+                   res.status(200).json({todos: document.todos, authenticated: true})
+               }
+           })
+               });
 
 module.exports = userRouter;
