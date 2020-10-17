@@ -9,16 +9,16 @@ const Login = props => {
     const authContext = useContext(AuthContext);
 
     const onChange = e => {
-       
-        setUser({...user,[e.target.name] : e.target.value})
-       
+
+        setUser({ ...user, [e.target.name]: e.target.value })
+
     }
-    const onSubmit = e =>{
+    const onSubmit = e => {
         e.preventDefault();
-        AuthService.login(user).then(data=>{
+        AuthService.login(user).then(data => {
             console.log(data)
-            const {isAuthenticated, user, message} = data;
-            if(isAuthenticated){
+            const { isAuthenticated, user, message } = data;
+            if (isAuthenticated) {
                 authContext.setUser(user);
                 authContext.setIsAuthenticated(isAuthenticated);
                 props.history.push('/todos');
@@ -46,7 +46,7 @@ const Login = props => {
                     placeholder="Enter Password" />
                 <button className="btn btn-lg btn-primary btn-block" type="submit">Log in</button>
             </form>
-            {message ? <Message message={message}/> : null}
+            {message ? <Message message={message} /> : null}
         </div>
     )
 }
