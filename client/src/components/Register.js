@@ -1,37 +1,37 @@
-import React, { useState, useRef, useEffect} from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import AuthService from '../services/AuthService'
 import Message from './Message'
 
 
 
 const Register = props => {
-    const [user, setUser] = useState({ username: "", password: "", role : "" });
+    const [user, setUser] = useState({ username: "", password: "", role: "" });
     const [message, setMessage] = useState(null);
-   let timerID = useRef(null);
+    let timerID = useRef(null);
 
-   useEffect(()=>{
-       return ()=>{
-           clearTimeout(timerID);
-       }
-   }, []);
+    useEffect(() => {
+        return () => {
+            clearTimeout(timerID);
+        }
+    }, []);
 
     const onChange = e => {
-      
-        setUser({...user, [e.target.name]: e.target.value})
-       
+
+        setUser({ ...user, [e.target.name]: e.target.value })
+
     }
 
     const resetForm = () => {
-        setUser({username: "", password: "", role : ""})
+        setUser({ username: "", password: "", role: "" })
     }
-    const onSubmit = e =>{
+    const onSubmit = e => {
         e.preventDefault();
-        AuthService.register(user).then(data=>{
-            const {message} = data;
+        AuthService.register(user).then(data => {
+            const { message } = data;
             setMessage(message)
             resetForm();
-            if(!message.msgError){
-                timerID = setTimeout(()=>{
+            if (!message.msgError) {
+                timerID = setTimeout(() => {
                     props.history.push('/login');
                 }, 2000)
             }
@@ -54,7 +54,7 @@ const Register = props => {
                     onChange={onChange}
                     className="form-control"
                     placeholder="Enter Password" />
-                    <label htmlFor="role" className="sr-only"> Role: </label>
+                <label htmlFor="role" className="sr-only"> Role: </label>
                 <input type="text"
                     name="role"
                     onChange={onChange}
@@ -62,7 +62,7 @@ const Register = props => {
                     placeholder="Enter role (admin/user)" />
                 <button className="btn btn-lg btn-primary btn-block" type="submit">Register</button>
             </form>
-            {message ? <Message message={message}/> : null}
+            {message ? <Message message={message} /> : null}
         </div>
     )
 }
