@@ -1,8 +1,8 @@
-import React, { Component, useContext } from "react";
+import React, {  useContext } from "react";
 import { Link } from 'react-router-dom';
 import AuthService from '../services/AuthService';
 import { AuthContext } from '../context/AuthContext';
-import { Container } from 'react-bootstrap';
+
 
 const Navbar = props => {
     const { isAuthenticated, user, setIsAuthenticated, setUser } = useContext(AuthContext);
@@ -20,14 +20,9 @@ const onClickLogoutHandler = () =>{
         return (
             <>
                 <Link to="/">
-                    <li> <a class="active" href="#home">Home</a></li>
+                    <li> <a className="active" href="#home">Home</a></li>
                 </Link>
-                <Link to="/about">
-                    <li><a href="#about">About</a></li>
-                </Link>
-                <Link to="/contact">
-                    <li><a href="#contact">Contact</a></li>
-                </Link>
+               
                 <Link to="/login">
                     <li><a href="#login">Login</a></li>
                 </Link>
@@ -43,14 +38,9 @@ const onClickLogoutHandler = () =>{
         return (
             <>
                 <Link to="/">
-                    <li> <a class="active" href="#home">Home</a></li>
+                    <li> <a className="active" href="#home">Home</a></li>
                 </Link>
-                <Link to="/about">
-                    <li><a href="#about">About</a></li>
-                </Link>
-                <Link to="/contact">
-                    <li><a href="#contact">Contact</a></li>
-                </Link>
+               
                 <Link to="/todos">
                     <li><a href="#contact">Todos</a></li>
                 </Link>

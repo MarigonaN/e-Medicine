@@ -1,36 +1,46 @@
-import React, { useState, useContext } from 'react';
+import React, { useState, useRef, useEffect} from 'react';
 import AuthServices from '../services/AuthService'
 import Message from './Message'
 import { AuthContext } from '../context/AuthContext'
 
-const Login = props => {
+
+const Register = props => {
     const [user, setUser] = useState({ username: "", password: "" });
     const [message, setMessage] = useState(null);
-    const authContext = useContext(AuthContext);
+   let timerID = useRef(null);
+
+   useEffect(()=>{
+       return()=>{
+           clearTimeout(timerID);
+       }
+   }, []);
 
     const onChange = e => {
       
         setUser({...user, [e.target.name]: e.target.value})
-     
+       
+    }
+
+    const resetForm = () => {
+        setUser({username: "", password: "", role : ""})
     }
     const onSubmit = e =>{
         e.preventDefault();
-        AuthServices.login(user).then(data=>{
-            const {isAuthenticated, user, message} = data;
-            if(isAuthenticated){
-                authContext.setUser(user);
-                authContext.setIsAuthenticated(isAuthenticated);
-                props.history.push('/todos');
+        AuthServices.register(user).then(data=>{
+            const {message} = data;
+            resetForm();
+            if(!message.msgError){
+                timerID = setTimeout(()=>{
+                    props.history.push('/login');
+                }, 2000)
             }
-            else
-                setMessage(message);
         })
     }
     return (
 
         <div>
             <form onSubmit={onSubmit}>
-                <h3>Please sign in</h3>
+                <h3>Please register</h3>
                 <label htmlFor="username" className="sr-only"> Username: </label>
                 <input type="text"
                     name="username"
@@ -43,10 +53,10 @@ const Login = props => {
                     onChange={onChange}
                     className="form-control"
                     placeholder="Enter Password" />
-                <button className="btn btn-lg btn-primary btn-block" type="submit">Log in</button>
+                <button className="btn btn-lg btn-primary btn-block" type="submit">Register</button>
             </form>
             {message ? <Message message={message}/> : null}
         </div>
     )
 }
-export default Login;
+export default Register;
