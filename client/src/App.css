@@ -59,19 +59,19 @@ ul {
   li {
 	float: left;
   }
-  li a {
+  li{
 	display: block;
 	color: white;
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
   }
-  li a:hover:not(.active) {
+  li:hover:not(.active) {
 	color: white;
 	font-weight: bolder;
 	text-decoration: none;
   }
-  li a.active {
+  li.active {
 	color: white;
 	background-color: #4CAF50;
 	text-decoration: none;
