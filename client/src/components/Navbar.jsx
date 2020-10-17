@@ -1,4 +1,4 @@
-import React, {  useContext } from "react";
+import React, { useContext } from "react";
 import { Link } from 'react-router-dom';
 import AuthService from '../services/AuthService';
 import { AuthContext } from '../context/AuthContext';
@@ -7,14 +7,14 @@ import { AuthContext } from '../context/AuthContext';
 const Navbar = props => {
     const { isAuthenticated, user, setIsAuthenticated, setUser } = useContext(AuthContext);
 
-const onClickLogoutHandler = () =>{
-    AuthService.logout().then(data=>{
-        if(data.success){
-            setUser(data.user);
-            setIsAuthenticated(false)
-        }
-    });
-}
+    const onClickLogoutHandler = () => {
+        AuthService.logout().then(data => {
+            if (data.success) {
+                setUser(data.user);
+                setIsAuthenticated(false)
+            }
+        });
+    }
 
     const unauthenticatedNavbar = () => {
         return (
@@ -22,7 +22,7 @@ const onClickLogoutHandler = () =>{
                 <Link to="/">
                     <li className="active" href="#home">Home</li>
                 </Link>
-               
+
                 <Link to="/login">
                     <li href="#login">Login</li>
                 </Link>
@@ -40,7 +40,7 @@ const onClickLogoutHandler = () =>{
                 <Link to="/">
                     <li className="active" href="#home">Home</li>
                 </Link>
-               
+
                 <Link to="/todos">
                     <li href="#contact">Todos</li>
                 </Link>
@@ -50,15 +50,15 @@ const onClickLogoutHandler = () =>{
                             <li href="#contact">Admin</li>
                         </Link> : null
                 }
-                <button type="button" className="btn btn-link nav-link" onClick={onClickLogoutHandler}>Logout</button>
-
+                <Link to="/"><button type="button" className="btn btn-link nav-link" onClick={onClickLogoutHandler}>Logout</button>
+                </Link>
             </>
         )
     }
     return (
         <header>
             <div className="overlay">
-             
+
                 <ul>
                     {!isAuthenticated ? unauthenticatedNavbar() : authenticatedNavbar()}
                 </ul>
