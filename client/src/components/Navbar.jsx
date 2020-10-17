@@ -20,14 +20,14 @@ const onClickLogoutHandler = () =>{
         return (
             <>
                 <Link to="/">
-                    <li> <a className="active" href="#home">Home</a></li>
+                    <li className="active" href="#home">Home</li>
                 </Link>
                
                 <Link to="/login">
-                    <li><a href="#login">Login</a></li>
+                    <li href="#login">Login</li>
                 </Link>
                 <Link to="/register">
-                    <li><a href="#register">Register</a></li>
+                    <li href="#register">Register</li>
                 </Link>
             </>
         )
@@ -38,16 +38,16 @@ const onClickLogoutHandler = () =>{
         return (
             <>
                 <Link to="/">
-                    <li> <a className="active" href="#home">Home</a></li>
+                    <li className="active" href="#home">Home</li>
                 </Link>
                
                 <Link to="/todos">
-                    <li><a href="#contact">Todos</a></li>
+                    <li href="#contact">Todos</li>
                 </Link>
                 {
                     user.role === "admin" ?
                         <Link to="/admin">
-                            <li><a href="#contact">Admin</a></li>
+                            <li href="#contact">Admin</li>
                         </Link> : null
                 }
                 <button type="button" className="btn btn-link nav-link" onClick={onClickLogoutHandler}>Logout</button>

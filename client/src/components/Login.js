@@ -1,6 +1,6 @@
 import React, { useState, useContext } from 'react';
-import AuthServices from '../services/AuthService'
-import Message from './Message'
+import AuthService from '../services/AuthService'
+import Message from '../components/Message'
 import { AuthContext } from '../context/AuthContext'
 
 const Login = props => {
@@ -9,13 +9,14 @@ const Login = props => {
     const authContext = useContext(AuthContext);
 
     const onChange = e => {
-      
-        setUser({...user, [e.target.name]: e.target.value})
-     
+       
+        setUser({...user,[e.target.name] : e.target.value})
+       
     }
     const onSubmit = e =>{
         e.preventDefault();
-        AuthServices.login(user).then(data=>{
+        AuthService.login(user).then(data=>{
+            console.log(data)
             const {isAuthenticated, user, message} = data;
             if(isAuthenticated){
                 authContext.setUser(user);
