@@ -1,4 +1,3 @@
-import { response } from "express"
 
 export default {
     getTodos: () => {
