@@ -2,7 +2,7 @@ import { response } from "express"
 
 export default {
     getTodos :()=>{
-        return fetch('/user/todoes')
+        return fetch('/user/todos')
         .then(response=>{
             if(response.status != 401){
                 return response.json().then(data => data);
