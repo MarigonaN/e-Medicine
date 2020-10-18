@@ -1,28 +1,28 @@
 import { response } from "express"
 
 export default {
-    getTodos :()=>{
+    getTodos: () => {
         return fetch('/user/todos')
-        .then(response=>{
-            if(response.status != 401){
-                return response.json().then(data => data);
-            }else
-            return {message : {msgBody : "UnAuthorized"}, msgError : true}
-        })
+            .then(response => {
+                if (response.status != 401) {
+                    return response.json().then(data => data);
+                } else
+                    return { message: { msgBody: "UnAuthorized" }, msgError: true }
+            })
     },
-    postTodo : todo=>{
+    postTodo: todo => {
         return fetch('/user/todo', {
-            method : "post",
-            body : JSON.stringify(todo),
+            method: "post",
+            body: JSON.stringify(todo),
             headers: {
-                'Content-Type' : 'application/json'
+                'Content-Type': 'application/json'
             }
-        }).then(response=>{
-            if(response.status !=401){
+        }).then(response => {
+            if (response.status != 401) {
                 return response.json().then(data => data);
             }
             else
-            return {message : {msgBody : "UnAuthorized"}, msgError : true}
+                return { message: { msgBody: "UnAuthorized" }, msgError: true }
         })
     }
 }
