@@ -9,6 +9,35 @@ const Todos = props =>{
     const [message, setMessage] = useState(null);
     const authContext = useContext(AuthContext);
 
+    useEffect(()=> {
+        TodoService.getTodos().then(data=>{
+            setTodos(data.todos);
+        })
+    },[])
+    return(
+        <div>
+            <ul className="list-group">
+                {
+                    todos.map(todo => {
+                        return <TodoItem key={todo_id} todo={todo}/>
+                    })
+                }
+
+            </ul>
+            <br></br>
+            <form onSubmit={onSubmit}>
+                <label htmlFor="todo">Enter Todo</label>
+                <input type="text"
+                        name="todo"
+                        value={todo.name}
+                        onChange={onChange}
+                        className="form-control"
+                        placeholder="Please enter Todos"/>
+                        <button className="btn btn-lg btn-primary btn-block" type="submit">Submit</button>
+            </form>
+        </div>
+    )
+
 }
 
 export default Todos
