@@ -42,12 +42,12 @@ const Navbar = props => {
                 </Link>
 
                 <Link to="/todos">
-                    <li href="#contact">Todos</li>
+                    <li className="active" href="#contact">Todos</li>
                 </Link>
                 {
                     user.role === "admin" ?
                         <Link to="/admin">
-                            <li href="#contact">Admin</li>
+                            <li className="active" href="#contact">Admin</li>
                         </Link> : null
                 }
                 <Link to="/"><button type="button" className="btn btn-link nav-link" onClick={onClickLogoutHandler}>Logout</button>
