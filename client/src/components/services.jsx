@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 
 import {Row, Col, Container} from "react-bootstrap"
-class services extends Component {
+class Services extends Component {
     render() {
         return (
-        <Container className="services">
-              <div >
+  
+              <div className="container-fluid services" >
             
                  
                         <div className="text-center">
@@ -35,9 +35,9 @@ class services extends Component {
      </Row>
             
             </div>
-            </Container>
+    
         );
     }
 }
 
-export default services;
+export default Services;

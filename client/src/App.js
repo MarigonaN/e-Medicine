@@ -5,6 +5,8 @@ import Register from './components/Register'
 import Todos from "./components/Todos"
 import './App.css';
 import Home from "./pages/Home"
+import Admin from "./components/Admin"
+import PrivateRoute from './hocs/PrivateRoute'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 function App() {
 
@@ -16,7 +18,9 @@ function App() {
         <Route exact path="/" component={Home} />
         <Route path="/login" component={Login} />
         <Route path="/register" component={Register} />
-        <Route path="/todos" component={Todos}/>
+        <PrivateRoute path="/todos" roles={["user","admin"]} component={Todos}/>
+       
+        <Route path="/admin" component={Admin}/>
       </Router>
     </div>
 
