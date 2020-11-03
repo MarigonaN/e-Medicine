@@ -8,6 +8,10 @@ const PrivateRoute = ({component: Component, roles, ...rest})=>{
         <Route {...rest} render={props=> {
             if(!isAuthenticated)
                 return <Redirect to={{pathname: '/login', state: {from: props.location}}}/>
+                if(!roles.included(user.role))
+                    return <Redirect to={{pathname: '/',
+                                     state : {from : props.location}}}/>
+                                     return <Component {...props}/>
         }}/>
     )
 }
