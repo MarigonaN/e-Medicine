@@ -19,8 +19,9 @@ const Navbar = props => {
     const unauthenticatedNavbar = () => {
         return (
             <>
+            
                 <Link to="/">
-                    <li className="active" href="#home">Home</li>
+                    <li className="active"  href="#home">Home</li>
                 </Link>
 
                 <Link to="/login">
@@ -37,6 +38,7 @@ const Navbar = props => {
     const authenticatedNavbar = () => {
         return (
             <>
+        
                 <Link to="/">
                     <li className="active" href="#home">Home</li>
                 </Link>
@@ -66,7 +68,7 @@ const Navbar = props => {
 
 
                 <br></br>
-                <h1 className="mt-5" style={{paddingTop: "50px", color: "rgba(0, 0, 0, 0.518)", fontSize: "10vh", fontVariant: "oblique", fontWeight: "bolder"}}>Simply The Best</h1>
+                <h1 className="mt-5" style={{paddingTop: "50px", color: "whitesmoke", fontSize: "10vh", fontVariant: "oblique", fontWeight: "bolder"}}>Simply The Best</h1>
               
             </div>
         </header>
