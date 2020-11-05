@@ -24,10 +24,10 @@ const Navbar = props => {
                 </Link>
 
                 <Link to="/login">
-                    <li href="#login">Login</li>
+                    <li href="#login" >Login</li>
                 </Link>
                 <Link to="/register">
-                    <li href="#register">Register</li>
+                    <li href="#register" >Register</li>
                 </Link>
             </>
         )
@@ -66,8 +66,8 @@ const Navbar = props => {
 
 
                 <br></br>
-                <h1 className="mt-5">Simply The Best</h1>
-                <h3>Reasons for Choosing US</h3>
+                <h1 className="mt-5" style={{paddingTop: "50px", color: "rgba(0, 0, 0, 0.518)", fontSize: "10vh", fontVariant: "oblique", fontWeight: "bolder"}}>Simply The Best</h1>
+              
             </div>
         </header>
 
