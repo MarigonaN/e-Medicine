@@ -55,7 +55,7 @@ const resetForm = ()=>{
        
 
 
-            <ul className="list-group">
+            {/* <ul className="list-group">
                 {
                     todos.map(todo => {
                         return <TodoItem key={todo._id} todo={todo} />
@@ -74,7 +74,7 @@ const resetForm = ()=>{
                     placeholder="Please enter Todos" />
                 <button className="btn btn-lg btn-primary btn-block" type="submit">Submit</button>
             </form>
-            {message ? <Message message={message}/> : null}
+            {message ? <Message message={message}/> : null} */}
         </div>
     )
 
