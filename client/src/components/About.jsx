@@ -7,7 +7,7 @@ class About extends Component {
                 <div className="mt-5">
                     <div className="text-center">
                         <h2 className=" text-uppercase">About</h2>
-                        <h3 className=" text-muted">About us</h3>
+                     
                     </div>
                     <ul className=" timeline mt-5">
                         <li >
