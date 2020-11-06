@@ -19,7 +19,7 @@ const Navbar = props => {
     const unauthenticatedNavbar = () => {
         return (
             <>
-            
+       
                 <Link to="/">
                     <li className="active"  href="#home">Home</li>
                 </Link>
@@ -59,7 +59,7 @@ const Navbar = props => {
     }
     return (
         <header>
-            <div className="overlay">
+            <div className="overlay" >
 
                 <ul>
                     {!isAuthenticated ? unauthenticatedNavbar() : authenticatedNavbar()}
@@ -68,7 +68,7 @@ const Navbar = props => {
 
 
                 <br></br>
-                <h1 className="mt-5" style={{paddingTop: "50px", color: "whitesmoke", fontSize: "10vh", fontVariant: "oblique", fontWeight: "bolder"}}>Simply The Best</h1>
+                <h1 className="mt-5" style={{paddingTop: "50px",paddingBottom: "50px", color: "whitesmoke", fontSize: "10vh", fontVariant: "oblique", fontWeight: "bolder"}}>Simply The Best</h1>
               
             </div>
         </header>

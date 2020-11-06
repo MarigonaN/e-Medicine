@@ -29,7 +29,7 @@ const Login = props => {
     }
     return (
 
-        <div>
+        <div className="container login">
             <form onSubmit={onSubmit}>
                 <h3>Please sign in</h3>
                 <label htmlFor="username" className="sr-only"> Username: </label>
