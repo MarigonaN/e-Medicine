@@ -8,9 +8,13 @@ function Modals() {
 
     const closeModalHandler = () => setShow(false);
     return (
-        <div>
+        <div class="container">
             {show ? <div onClick={closeModalHandler} className="back-drop"></div> : null}
-        <img  src="https://todaymiddleware.mims.com/resource/image/2C93CB3B-9617-4733-81D4-A68001198DD0/OriginalThumbnail/THUMBNAIL_Fotolia_59344290_Subscription_Monthly_M.jpg" onClick={() => setShow(true)} className="btn-openModal"  ></img> 
+            <img  src="https://todaymiddleware.mims.com/resource/image/2C93CB3B-9617-4733-81D4-A68001198DD0/OriginalThumbnail/THUMBNAIL_Fotolia_59344290_Subscription_Monthly_M.jpg" className="btn-openModal"  ></img>
+            <div class="overlay" >   <div class="text"  >  Hello World</div>
+      
+   
+  </div>
         <Modal show={show} close={closeModalHandler}/>
       </div>
     );
