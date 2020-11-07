@@ -9,7 +9,8 @@ body {
 }
 
 .btn-openModal {
-  background: #2c2c2c;
+  width: 400px;
+  height: 250px;
   color: #eee;
   font-size: 1rem;
   margin: 2rem;
@@ -21,8 +22,9 @@ body {
 
 .modal-wrapper {
   background: #fff;
-  width: 80%;
-  max-width: 800px;
+
+  max-width: 80%;
+
   margin: 4rem auto;
   transition: all .7s ease;
 }
@@ -57,7 +59,7 @@ body {
 .modal-body p {
   font-size: 1rem;
   background: #eee;
-  color: #333;
+  color: rgb(51, 51, 51);
   padding: 1rem;
   margin: 1rem 0 2rem 0;
 }
@@ -75,9 +77,10 @@ body {
 }
 
 .back-drop {
-  background: rgba(63, 61, 61, 0.692);
+  background: #686b64;
   height: 100%;
   position: fixed;
   transition: all 1.3s;
   width: 100%;
+  z-index: -1;
 }

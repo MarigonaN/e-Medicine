@@ -3,7 +3,7 @@ import TodoItem from './TodoItem'
 import TodoService from '../services/TodoServices';
 import Message from "../components/Message"
 import { AuthContext } from '../context/AuthContext'
-import Navbar from './Navbar'
+
 import Modals from './modals/Modals'
 
 
@@ -50,7 +50,7 @@ const resetForm = ()=>{
 }
     return (
         <div>
-         <Navbar />
+       
  
         <Modals />
      
