@@ -4,7 +4,8 @@ import TodoService from '../services/TodoServices';
 import Message from "../components/Message"
 import { AuthContext } from '../context/AuthContext'
 import Navbar from './Navbar'
-import {Modal} from './modals/Modal'
+import Modals from './modals/Modals'
+
 
 
 const Todos = props => {
@@ -51,8 +52,8 @@ const resetForm = ()=>{
         <div>
          <Navbar />
  
-          <Modal />   
-       
+        <Modals />
+     
 
 
             {/* <ul className="list-group">

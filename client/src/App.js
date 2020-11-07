@@ -1,5 +1,5 @@
-import React , { useState } from 'react';
-import Navbar from './components/Navbar'
+import React  from 'react';
+
 import Login from './components/Login'
 import Register from './components/Register'
 import Todos from "./components/Todos"
@@ -9,19 +9,17 @@ import Admin from "./components/Admin"
 import PrivateRoute from './hocs/PrivateRoute'
 import UnPrivateRoute from './hocs/UnPrivateRoute'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
-import { Modal } from './components/modals/Modal';
-function App() {
-  const [show, setShow] = useState(false);
 
-  const closeModalHandler = () => setShow(false);
+
+function App() {
+
 
   return (
 
     <div className="App">
     
       <Router>
-     
-        <Route exact path="/" component={Home} />
+<Route exact path="/" component={Home} />
         <UnPrivateRoute path="/login" component={Login}/>
         <UnPrivateRoute path="/register" component={Register}/>
      
@@ -30,11 +28,7 @@ function App() {
        
      
       </Router>
-      <div>
-      { show ? <div onClick={closeModalHandler} className="back-drop"></div> : null }
-      <button onClick={() => setShow(true)} className="btn-openModal">Open Modal</button>
-      <Modal show={show} close={closeModalHandler} />
-    </div>
+     
     </div>
 
 
