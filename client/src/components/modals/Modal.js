@@ -10,7 +10,7 @@ import "./Modal.css"
 }}>
     <div className="modal-header">
         <p>Welcome</p>
-        <snap onClick={close} className="close-modal-btn" style={{cursor: "pointer", fontWeight: "bolder"}}>x</snap>
+        <span onClick={close} className="close-modal-btn" style={{cursor: "pointer", fontWeight: "bolder"}}>x</span>
     </div>
     <div className="modal-content">
         <div className="modal-body">
