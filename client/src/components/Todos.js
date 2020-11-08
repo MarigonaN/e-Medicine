@@ -3,7 +3,7 @@ import TodoItem from './TodoItem'
 import TodoService from '../services/TodoServices';
 import Message from "../components/Message"
 import { AuthContext } from '../context/AuthContext'
-
+import Doctors from "./doctors/Doctors"
 import Modals from './modals/Modals'
 
 
@@ -53,7 +53,7 @@ const resetForm = ()=>{
        
  
         <Modals />
-     
+     <Doctors />
 
 
             <ul className="list-group">
