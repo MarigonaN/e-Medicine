@@ -1,8 +1,8 @@
 
 import React, { useState } from 'react';
 import  Modal  from './Modal';
-
 import "./Modal.css"
+
 function Modals() {
     const [show, setShow] = useState(false);
 

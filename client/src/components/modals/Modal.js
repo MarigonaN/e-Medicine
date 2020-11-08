@@ -2,6 +2,7 @@ import React from 'react';
 import "./Modal.css"
 
  const Modal = ({ show, close }) => {
+     
   return (
 <div className="modal-wrapper" 
     style={{
