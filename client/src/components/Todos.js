@@ -6,7 +6,7 @@ import { AuthContext } from '../context/AuthContext'
 import Doctors from "./doctors/Doctors"
 import Modals from './modals/Modals'
 
-
+import Navbar from "./Navbar"
 
 const Todos = props => {
     const [todo, setTodo] = useState({ name: "" })
@@ -50,7 +50,7 @@ const resetForm = ()=>{
 }
     return (
         <div>
-       
+       <Navbar />
  
         <Modals />
      <Doctors />
