@@ -79,8 +79,8 @@ body {
 }
 
 .back-drop {
-  background: #686b64;
-  height: 100%;
+
+
   position: fixed;
   transition: all 1.3s;
   width: 100%;

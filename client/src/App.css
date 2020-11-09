@@ -84,7 +84,7 @@ ul {
 .services{
 	margin-top: 30px;
 	padding: 10px 10px;
-	background-color: whitesmoke;
+
 	
 }
 
@@ -94,9 +94,7 @@ ul {
 	height: 200px;
 }
 
-.about{
-	background-color: whitesmoke;
-}
+
 
   .timeline > li .timeline-image {
 	position: absolute;

@@ -6,6 +6,19 @@ class Doctors extends Component {
    }
     
     render() {
+        fetch("https://betterdoctor.p.rapidapi.com/api.betterdoctor.com/2016-03-01/doctors?name=", {
+	"method": "GET",
+	"headers": {
+		"x-rapidapi-key": "b6b6146d81msh99e64dcf42515c3p16ceb9jsn0cda807686c3",
+		"x-rapidapi-host": "betterdoctor.p.rapidapi.com"
+	}
+})
+.then(response => {
+	console.log(response);
+})
+.catch(err => {
+	console.error(err);
+});
         return(
        <>
        <div>
@@ -17,15 +30,7 @@ class Doctors extends Component {
        </>
         )
 }
-componentDidMount = async () => {
-    const resp = await fetch("https://betterdoctor.p.rapidapi.com/api.betterdoctor.com/2016-03-01/doctors?name=")
-    if (resp.ok){
-        const doctors = await resp.json()
-        this.setState({
-            doctors: doctors
-        })
-    }
-}
+
 }
 
 export default Doctors;

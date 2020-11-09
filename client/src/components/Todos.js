@@ -5,8 +5,9 @@ import Message from "../components/Message"
 import { AuthContext } from '../context/AuthContext'
 import Doctors from "./doctors/Doctors"
 import Modals from './modals/Modals'
+import {Navbar, Nav, } from 'react-bootstrap'
+import SecondNavbar from './SecondNavbar';
 
-import Navbar from "./Navbar"
 
 const Todos = props => {
     const [todo, setTodo] = useState({ name: "" })
@@ -50,8 +51,8 @@ const resetForm = ()=>{
 }
     return (
         <div>
-       <Navbar />
- 
+     
+ <SecondNavbar />
         <Modals />
      <Doctors />
 
