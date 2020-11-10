@@ -34,7 +34,7 @@ class Contact extends Component {
                     </div>
                     <div class="text-center">
                         <div id="success"></div>
-                        <button class="btn btn-primary btn-xl text-uppercase" id="sendMessageButton" type="submit" style={{marginBottom: "50px"}}>Send Message</button>
+                        <button class="btn btn-success btn-xl text-uppercase" id="sendMessageButton" type="submit" style={{marginBottom: "50px"}}>Send Message</button>
                     </div>
                 </form>
             </div>
