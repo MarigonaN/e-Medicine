@@ -4,9 +4,9 @@ class About extends Component {
         return (
             <>
 
-                <div className="mt-5">
+                <div className="mt-5" style={{paddingTop: "100px", paddingBottom: "50px"}}>
                     <div className="text-center">
-                        <h2 className=" text-uppercase">About</h2>
+                        <h2 className=" text-uppercase" style={{marginBottom: "100px", fontFamily: "cursive"}}>About</h2>
                      
                     </div>
                     <ul className=" timeline mt-5">

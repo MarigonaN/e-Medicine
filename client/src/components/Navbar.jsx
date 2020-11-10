@@ -21,7 +21,7 @@ const Navbarr = props => {
         return (
             <>
         <Navbar bg="transparent" variant="transparent" >
-        <Navbar.Brand style={{fontFamily: "cursive", fontSize: "30px"}}>E-Medicine</Navbar.Brand>
+        <img src="https://dewey.tailorbrands.com/production/brand_version_mockup_image/15/4097908015_46ee0ad4-45ff-4c70-9a0e-48f1c172bf9d.png?cb=1605046547" style={{width: "180px", marginRight: "50px"}}></img>
         <Nav className="mr-auto">
                 <Link to="/">
                 <Link to="/"> <li><Nav.Link className="active" style={{color:"white", fontWeight: "bold"}}>Home</Nav.Link></li>  </Link>
@@ -45,7 +45,8 @@ const Navbarr = props => {
         return (
             <>
          <Navbar bg="transparent" variant="transparent" className="nav">
-    <Navbar.Brand style={{fontFamily: "cursive", fontSize: "40px", marginRight: "50px", }}>E-Medicine</Navbar.Brand>
+             <img src="https://dewey.tailorbrands.com/production/brand_version_mockup_image/15/4097908015_46ee0ad4-45ff-4c70-9a0e-48f1c172bf9d.png?cb=1605046547" style={{width: "180px", marginRight: "50px"}}></img>
+   
     <Nav className="mr-auto">
     <Link to="/"> <li ><Nav.Link className="active" style={{color:"white", fontWeight: "bold"}}>Home</Nav.Link></li>  </Link>
     <Link to="/todos"><li><Nav.Link href="#doctors" style={{color:"white", fontWeight: "bold"}}>Doctors</Nav.Link>  </li></Link>
@@ -74,7 +75,7 @@ const Navbarr = props => {
 
 
                 <br></br>
-                <h1 className="mt-5" style={{paddingTop: "50px",paddingBottom: "50px", color: "whitesmoke", fontSize: "10vh", fontVariant: "oblique", fontWeight: "bolder"}}>Simply The Best</h1>
+                <h1 className="mt-5" style={{paddingTop: "30px",paddingBottom: "50px", color: "whitesmoke", fontSize: "8vh",  fontWeight: "bolder",fontFamily: "cursive"}}>Simply The Best</h1>
               
             </div>
         </header>

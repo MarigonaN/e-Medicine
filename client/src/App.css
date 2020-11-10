@@ -17,15 +17,15 @@ header .overlay{
 	padding: 50px;
 	color: #FFF;
 
-  background-image: linear-gradient( 100deg,  #4ce92569 10%, #f0f1ee6b 100%);
+  background-image: linear-gradient( 100deg,  #174d09d2 10%, #f0f1ee6b 100%);
 	
 }
-.overlay{
+.overlay1{
 
 
 	color: #FFF;
 
-  background-image: linear-gradient( 100deg,  #4ce92588 10%, #f0f1ee85 100%);
+	background-color: #174d09d2;
 	
 }
 
@@ -171,7 +171,7 @@ p{
 	  .footer {
 		text-align: center;
 		font-size: 0.9rem;
-		font-family: "Montserrat",  "Helvetica Neue", Arial, sans-serif;
+		font-family: "Montserrat", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
 	  }
 
 .some-doctors{

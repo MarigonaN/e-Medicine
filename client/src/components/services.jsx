@@ -7,12 +7,12 @@ class Services extends Component {
     render() {
         return (
   
-              <div className="container-fluid services" >
+              <div className="container-fluid services" style={{paddingTop: "70px"}} >
             
                  
                         <div className="text-center">
 
-                            <h2 className="section-heading text-uppercase mt-5 ">Services</h2>
+                            <h2 className="section-heading text-uppercase mt-5 " style={{marginBottom: "100px", fontFamily: "cursive"}}>Services</h2>
                            
                         </div>
                     

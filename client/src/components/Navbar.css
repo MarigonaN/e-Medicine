@@ -8,6 +8,7 @@ ul {
   li {
     float: left;
     
+    
   }
   li .active{
 	display: block;
@@ -26,6 +27,7 @@ ul {
     font-weight: bolder;
 	background-color: #4caf4f59;
     text-decoration: none;
+    border-radius: 0 0 75% 75% / 30%;
  
   }
 

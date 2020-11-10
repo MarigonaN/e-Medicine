@@ -19,8 +19,8 @@ class Footer extends Component {
                         <a class="btn btn-dark btn-social mx-2" href="https://mail.google.com/mail/u/0/#inbox"><SiGmail/></a>
                     </div>
                     <div class="col-lg-4 text-lg-right">
-                        <a class="mr-3" href="#!">Privacy Policy</a>
-                        <a href="#!">Terms of Use</a>
+                        <a class="mr-3" href="/" style={{color: "grey",textDecoration: "none"}}>Privacy Policy</a>
+                        <a href="/" style={{color: "grey",textDecoration: "none"}}>Terms of Use</a>
                     </div>
                 </div>
             </div>
