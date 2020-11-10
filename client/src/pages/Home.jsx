@@ -20,13 +20,16 @@ class Home extends Component {
                 <About />
                
             </div>
-            <div className="container-fluid">
+          
             
            
               
                 <Contact />
+                
+       
                 <Footer />
-            </div>
+           
+         
             </div>
         );
     }
