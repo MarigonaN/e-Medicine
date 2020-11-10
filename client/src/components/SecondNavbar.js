@@ -22,7 +22,7 @@ const SecondNavbar = props => {
         return (
             <div >
                 <Navbar bg="transparent" variant="transparent">
-                <Link to="/">  <img src="https://dewey.tailorbrands.com/production/brand_version_mockup_image/15/4097908015_46ee0ad4-45ff-4c70-9a0e-48f1c172bf9d.png?cb=1605046547" style={{width: "180px", marginRight: "50px"}}></img></Link>
+                <Link to="/"> <img src="https://dewey.tailorbrands.com/production/brand_version_mockup_image/15/4097908015_46ee0ad4-45ff-4c70-9a0e-48f1c172bf9d.png?cb=1605046547" style={{width: "180px", marginRight: "50px"}}></img></Link>
                     <Nav className="mr-auto">
                         <Link to="/"> <Nav.Link style={{ color: "white", fontWeight: "bold" }}>Home</Nav.Link>  </Link>
                         <Link to="/todos"><li className="active"> <Nav.Link  className="active" href="#doctors" style={{ color: "white", fontWeight: "bold", backgroundColor: "" }}>Doctors</Nav.Link> </li>  </Link>
