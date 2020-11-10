@@ -2,7 +2,7 @@ import React from 'react';
 
 const TodoItem = props => {
     return(
-    <li>{props.todo.name}</li>
+    <p>{props.todo.name}</p>
     )
 }
 export default TodoItem;

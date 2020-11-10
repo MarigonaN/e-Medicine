@@ -1,0 +1,34 @@
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+
+	background-color: transparent;
+  }
+  li {
+    float: left;
+    
+  }
+  li .active{
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+  }
+  li:hover:not(.active) {
+	color: white;
+	font-weight: bolder;
+	text-decoration: none;
+  }
+  li .active {
+    color: white;
+    font-weight: bolder;
+	background-color: #4caf4f59;
+    text-decoration: none;
+ 
+  }
+
+  li .nav{
+      color: white;
+  }

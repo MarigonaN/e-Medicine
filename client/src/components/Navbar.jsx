@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import AuthService from '../services/AuthService';
 import { AuthContext } from '../context/AuthContext';
 import {Navbar, Nav} from 'react-bootstrap';
+import './Navbar.css'
 
 const Navbarr = props => {
     const { isAuthenticated, user, setIsAuthenticated, setUser } = useContext(AuthContext);
@@ -19,19 +20,19 @@ const Navbarr = props => {
     const unauthenticatedNavbar = () => {
         return (
             <>
-        <Navbar bg="transparent" variant="transparent">
-        <Navbar.Brand href="#home">E-Medicine</Navbar.Brand>
+        <Navbar bg="transparent" variant="transparent" >
+        <Navbar.Brand style={{fontFamily: "cursive", fontSize: "30px"}}>E-Medicine</Navbar.Brand>
         <Nav className="mr-auto">
                 <Link to="/">
-                <Nav.Link> <li className="active"  href="#home">Home</li></Nav.Link>
+                <Link to="/"> <li><Nav.Link className="active" style={{color:"white", fontWeight: "bold"}}>Home</Nav.Link></li>  </Link>
                 </Link>
                 </Nav>
                 <Nav.Link>  <Link to="/login">
-                    <li href="#login" >Login</li>
+                    <li href="#login" style={{color:"white", fontWeight: "bold"}}>Login</li>
                 </Link>
                 </Nav.Link>
                 <Nav.Link>    <Link to="/register">
-                <li href="#register" >Register</li>
+                <li href="#register" style={{color:"white", fontWeight: "bold"}} >Register</li>
                 </Link>
               </Nav.Link>
                 </Navbar>
@@ -43,21 +44,20 @@ const Navbarr = props => {
     const authenticatedNavbar = () => {
         return (
             <>
-         <Navbar bg="transparent" variant="transparent">
-    <Navbar.Brand href="#home">E-Medicine</Navbar.Brand>
+         <Navbar bg="transparent" variant="transparent" className="nav">
+    <Navbar.Brand style={{fontFamily: "cursive", fontSize: "40px", marginRight: "50px", }}>E-Medicine</Navbar.Brand>
     <Nav className="mr-auto">
-    <Link to="/"> <Nav.Link href="#home">Home</Nav.Link>  </Link>
-    <Link to="/todos"> <Nav.Link href="#features">Doctors</Nav.Link>  </Link>
+    <Link to="/"> <li ><Nav.Link className="active" style={{color:"white", fontWeight: "bold"}}>Home</Nav.Link></li>  </Link>
+    <Link to="/todos"><li><Nav.Link href="#doctors" style={{color:"white", fontWeight: "bold"}}>Doctors</Nav.Link>  </li></Link>
      
     </Nav>
-   
                 {
                     user.role === "admin" ?
                         <Link to="/admin">
-                          <li className="active" href="#contact">Admin</li>
+                          <li className="active" href="#admin">Admin</li>
                         </Link> : null
                 }
-                <Link to="/"><button type="button" className="btn btn-link nav-link" onClick={onClickLogoutHandler}>Logout</button>
+                <Link to="/"><li><button type="button" className="btn btn-link nav-link" onClick={onClickLogoutHandler} style={{color:"white", fontWeight: "bold"}}>Logout</button></li>
                 </Link>
                 </Navbar>
             </>

@@ -28,6 +28,8 @@ import "./Modal.css"
             <button onClick={close} className="btn-cancel">close</button>
         </div>
     </div>
+
+    
 </div>
   )
 };

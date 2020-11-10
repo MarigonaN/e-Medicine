@@ -5,13 +5,12 @@ import Message from "../components/Message"
 import { AuthContext } from '../context/AuthContext'
 import Doctors from "./doctors/Doctors"
 import Modals from './modals/Modals'
-import {Navbar, Nav, } from 'react-bootstrap'
 import SecondNavbar from './SecondNavbar';
-
+import Footer from './Footer'
 
 const Todos = props => {
     const [todo, setTodo] = useState({ name: "" })
-    const [todos,setTodos] = useState([]);
+    const [todos, setTodos] = useState([]);
     const [message, setMessage] = useState(null);
     const authContext = useContext(AuthContext);
 
@@ -21,52 +20,50 @@ const Todos = props => {
         })
     }, []);
 
-const onSubmit = e =>{
-    e.preventDefault();
-    TodoService.postTodo(todo).then(data => {
-        const {message} = data;
-        resetForm();
-        if(!message.msgError){
-            TodoService.getTodos().then(getData => {
-                setTodos(getData.todos);
-                setMessage(message)
-            })
-        }
-        else if(message.msgBody === "UnAuthorised"){
-            setMessage(message);
-            authContext.setUser({username: "", role : ""});
-            authContext.setIsAuthenticated(false);
-        }
-        else{
-            setMessage(message);
-        }
-    });
-}
+    const onSubmit = e => {
+        e.preventDefault();
+        TodoService.postTodo(todo).then(data => {
+            const { message } = data;
+            resetForm();
+            if (!message.msgError) {
+                TodoService.getTodos().then(getData => {
+                    setTodos(getData.todos);
+                    setMessage(message)
+                })
+            }
+            else if (message.msgBody === "UnAuthorised") {
+                setMessage(message);
+                authContext.setUser({ username: "", role: "" });
+                authContext.setIsAuthenticated(false);
+            }
+            else {
+                setMessage(message);
+            }
+        });
+    }
 
-const onChange = e =>{
-    setTodo({name: e.target.value})
-}
-const resetForm = ()=>{
-    setTodo({name: ""})
-}
+    const onChange = e => {
+        setTodo({ name: e.target.value })
+    }
+    const resetForm = () => {
+        setTodo({ name: "" })
+    }
     return (
         <div>
-     
- <SecondNavbar />
-        <Modals />
-     <Doctors />
 
-
-            <ul className="list-group">
+            <SecondNavbar />
+            <Modals />
+            <Doctors />
+            <div className="list-group">
+            <div  style={{ color: "black" }}>
                 {
                     todos.map(todo => {
                         return <TodoItem key={todo._id} todo={todo} />
                     })
                 }
-
-            </ul>
+            </div>
             <br></br>
-            <form onSubmit={onSubmit}>
+            <form onSubmit={onSubmit} className="submitForm">
                 <label htmlFor="todo">Enter Todo</label>
                 <input type="text"
                     name="todo"
@@ -74,10 +71,13 @@ const resetForm = ()=>{
                     onChange={onChange}
                     className="form-control"
                     placeholder="Please enter Todos" />
-                <button className="btn btn-lg btn-primary btn-block" type="submit">Submit</button>
+                <button className="btn btn-lg btn-success btn-block" type="submit">Submit</button>
             </form>
-            {message ? <Message message={message}/> : null}
+            {message ? <Message message={message} /> : null}
+            </div>
+            <Footer />
         </div>
+
     )
 
 }
