@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import About from "../components/About"
 import Navbar from '../components/Navbar'
 import Services from "../components/Services"
+import Contact from "../components/Contact"
 import Footer from "../components/Footer"
 
 
@@ -17,6 +18,13 @@ class Home extends Component {
            
                 <Services />
                 <About />
+               
+            </div>
+            <div className="container-fluid">
+            
+           
+              
+                <Contact />
                 <Footer />
             </div>
             </div>

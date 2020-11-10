@@ -55,7 +55,7 @@ const Todos = props => {
             <Modals />
             <Doctors />
             <div className="list-group">
-            <div  style={{ color: "black" }}>
+            <div  style={{ color: "black", marginLeft: "20px", marginTop: "20px" }}>
                 {
                     todos.map(todo => {
                         return <TodoItem key={todo._id} todo={todo} />
@@ -64,13 +64,13 @@ const Todos = props => {
             </div>
             <br></br>
             <form onSubmit={onSubmit} className="submitForm">
-                <label htmlFor="todo">Enter Todo</label>
+               
                 <input type="text"
                     name="todo"
                     value={todo.name}
                     onChange={onChange}
                     className="form-control"
-                    placeholder="Please enter Todos" />
+                    placeholder="Any suggestion" />
                 <button className="btn btn-lg btn-success btn-block" type="submit">Submit</button>
             </form>
             {message ? <Message message={message} /> : null}
