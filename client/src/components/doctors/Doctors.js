@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import DoctorList from './DoctorList'
 class Doctors extends Component {
    state = {
        doctors: []
@@ -9,6 +9,7 @@ class Doctors extends Component {
       
         return(
        <>
+       <DoctorList />
        <div>
  
        </div>

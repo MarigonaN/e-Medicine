@@ -52,7 +52,7 @@ const Todos = props => {
         <div>
 
             <SecondNavbar />
-            <Modals />
+   
             <Doctors />
             <div className="list-group">
             <div  style={{ color: "black", marginLeft: "20px", marginTop: "20px" }}>
