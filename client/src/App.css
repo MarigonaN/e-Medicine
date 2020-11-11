@@ -194,6 +194,6 @@ p{
 .list-group{
 	background-image: linear-gradient( 100deg,  #4ce92588 10%, #f0f1ee85 100%);
 	border: 2px solid green;
-	margin-left: 200px;
-	margin-right: 200px;
+	margin-left: 20%;
+	margin-right: 20%;
 }
