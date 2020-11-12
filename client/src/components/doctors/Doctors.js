@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import DoctorList from './DoctorList'
-
+import Modal from 'react-modal'
 class Doctors extends Component {
    state = {
        doctors: []
@@ -11,6 +11,9 @@ class Doctors extends Component {
         return(
        <>
        <DoctorList />
+       <button>Open modal</button>
+         
+
      
        </>
         )

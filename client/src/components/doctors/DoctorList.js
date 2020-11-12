@@ -1,11 +1,12 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import DoctorData from './doctors.json'
+import Modal from 'react-modal'
 import { Row, Col } from 'react-bootstrap'
-class DoctorList extends Component {
+function DoctorList()  {
+  
 
-
-    render() {
-
+  
+        const  [modalIsOpen,setModalIsOpen] = useState(false)
         return (
 
             <div>
@@ -14,20 +15,25 @@ class DoctorList extends Component {
                     {DoctorData.map((doctorDetail, index) => {
 
                         return (
+                        
                             <Col key={doctorDetail._id}>
-                                <img src={doctorDetail.picture} style={{ width: "250px", height: "250px" }}></img>
+                              <button onClick={()=> setModalIsOpen(true)}>  <img src={doctorDetail.picture} style={{ width: "250px", height: "250px" }}></img></button>
                                 <p >{doctorDetail.name.first} {doctorDetail.name.last}</p>
                             </Col>
-
+                           
+                         
                         )
-
+                      
                     })}
                 </Row>
+                <Modal isOpen={modalIsOpen}>
+                        <h2>Modal title</h2>
+                    </Modal>
 
             </div>
 
         );
-    }
+    
 }
 
 export default DoctorList;
