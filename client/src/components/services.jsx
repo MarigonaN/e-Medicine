@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { FaHospitalAlt } from "react-icons/fa";
 import { FaUserNurse } from "react-icons/fa";
 import { MdLocalPharmacy } from "react-icons/md";
-import {Row, Col, Container} from "react-bootstrap"
+import {Row, Col} from "react-bootstrap"
 class Services extends Component {
     render() {
         return (
