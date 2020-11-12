@@ -1,0 +1,45 @@
+.container {
+    position: relative;
+    width: 50%;
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+   
+  }
+  
+  .middle {
+     
+    position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 90%;
+  width: 70%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(254, 209, 54, 0.9);
+
+  }
+  
+  
+  
+  .container:hover .middle {
+    opacity: 1;
+   
+    border: 1px solid rgba(254, 209, 54, 0.9);
+  }
+.text{
+    color: white;
+   
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
