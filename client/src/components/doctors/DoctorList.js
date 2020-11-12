@@ -28,6 +28,9 @@ function DoctorList()  {
                 </Row>
                 <Modal isOpen={modalIsOpen}>
                         <h2>Modal title</h2>
+                        <div>
+                            <button onClick={()=> setModalIsOpen(false)}>Close</button>
+                        </div>
                     </Modal>
 
             </div>
