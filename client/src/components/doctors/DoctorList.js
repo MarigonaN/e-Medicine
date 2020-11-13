@@ -3,7 +3,7 @@ import DoctorData from './doctors.json'
 import Modal from 'react-modal'
 import { Row, Col } from 'react-bootstrap'
 import { BiPlusMedical } from "react-icons/bi";
-import './DoctorList.css'
+import './DoctorList.scss'
 Modal.setAppElement('#root')
 function DoctorList() {
 
@@ -33,12 +33,28 @@ function DoctorList() {
 
                 })}
             </Row>
-            <Modal isOpen={modalIsOpen} onRequestClose={() => setModalIsOpen(false)}>
+            {DoctorData.map((doctorDetail, index) => {
+                 return (
+            <Modal  isOpen={modalIsOpen} onRequestClose={() => setModalIsOpen(false)}
+            style={{
+
+            overlay: {
+                backgroundColor: "grey"
+            },
+            content: {
+                color: "orange"
+            }
+            }}
+            >
+                
                 <h2>Modal title</h2>
+                <p >{doctorDetail.name.first} {doctorDetail.name.last}</p>
                 <div>
                     <button onClick={() => setModalIsOpen(false)}>Close</button>
                 </div>
             </Modal>
+                 )
+             })}
 
         </div>
 

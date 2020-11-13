@@ -11,7 +11,7 @@ class Doctors extends Component {
         return(
        <>
        <DoctorList />
-       <button>Open modal</button>
+       
          
 
      
