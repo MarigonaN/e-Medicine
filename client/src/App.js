@@ -27,6 +27,7 @@ function App() {
           roles={["user", "admin"]}
           component={Todos}
         />
+
         <PrivateRoute path="/admin" roles={["admin"]} component={Admin} />
       </Router>
     </div>

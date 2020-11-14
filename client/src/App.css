@@ -1,199 +1,86 @@
 header {
-	
-	text-align: center;
-	width: 100%;
-	height: auto;
-	background-size: cover;
-	overflow: hidden;
-	border-radius: 0 0 75% 75% / 30%;
-	background: url(./img/fixed-bg.jpg);
-	background-size: contain;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-	
+  text-align: center;
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  overflow: hidden;
+  border-radius: 0 0 75% 75% / 30%;
+  background: url(./img/fixed-bg.jpg);
+  background-size: contain;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
-header .overlay{
+header .overlay {
+  padding: 50px;
+  color: #fff;
 
-	padding: 50px;
-	color: #FFF;
-
-  background-image: linear-gradient( 100deg,  #174d09d2 10%, #f0f1ee6b 100%);
-	
+  background-image: linear-gradient(100deg, #174d09d2 10%, #f0f1ee6b 100%);
 }
-.overlay1{
+.overlay1 {
+  color: #fff;
 
-
-	color: #FFF;
-
-	background-color: #1d5f0ce5;
-	
+  background-color: #1d5f0ce5;
 }
 
 h1 {
-	font-family: 'Dancing Script', cursive;
-	font-size: 80px;
-	margin-bottom: 30px;
+  font-family: "Dancing Script", cursive;
+  font-size: 80px;
+  margin-bottom: 30px;
 }
 
-h3, p {
-	font-family: 'Open Sans', sans-serif;
-	margin-bottom: 30px;
+h3,
+p {
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 30px;
 }
-
 
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 
-h1{
-  font-family: 'Montserrat', sans-serif;
+h1 {
+  font-family: "Montserrat", sans-serif;
 }
-p{
-  font-family: 'Open Sans', sans-serif;
-
+p {
+  font-family: "Open Sans", sans-serif;
 }
 
-.content{
+.content {
   top: 5vh;
   margin: 30px 10vw;
-
 }
 
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400);
 
-  @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400);
-
-  
-.services{
-	margin-top: 30px;
-	padding: 10px 10px;
-
-	
+.services {
+  margin-top: 30px;
+  padding: 10px 10px;
 }
 
-.img-services{
-	
-	width: 200px;
-	height: 200px;
+.img-services {
+  width: 200px;
+  height: 200px;
 }
 
-
-
-  .timeline > li .timeline-image {
-	position: absolute;
-	z-index: 100;
-	left: 0;
-	width: 80px;
-
-	height: 80px;
-	margin-left: 0;
-	text-align: center;
-	color: white;
-	border: 7px solid rgba(0, 128, 0, 0.719);
-	border-radius: 100%;
-	background-color: rgba(128, 128, 128, 0.226);
-	background-image: url(https://image.freepik.com/free-photo/high-angle-laptop-desk-office_23-2148339332.jpg)  ;
-	background-size: 240px;
-	background-repeat: no-repeat;
-	
-  }
-
-
-	.timeline > li .timeline-panel {
-	  float: left;
-	  width: 41%;
-	  padding: 0 20px 20px 30px;
-	  text-align: right;
-	margin-bottom: 20px;
-	color: black;
-	padding: 0px 0px;
-	
-	}
-	
-	.timeline > li .timeline-image {
-	  left: 50%;
-	  width: 100px;
-	  height: 100px;
-	  padding: 0px 0px;
-	 
-	  
-	  
-	}
-
-	.timeline > li.timeline-inverted > .timeline-panel {
-	  float: right;
-	  padding: 0 30px 20px 20px;
-	  text-align: left;
-	  padding: 0px 0px;
-
-	  
-	}
-
-	.timeline > li .timeline-image {
-	  width: 170px;
-	  height: 170px;
-	  margin-left: -85px;
-	  padding: 0px 0px;
-	}
-	.timeline > li .timeline-image h4 {
-	  margin-top: 40px;
-	
-	}
-
-
-	.vl{
-	
-		height: 120px;
-	}
-	
-
-
-	.vl3{
-		border-right: 3px solid rgba(128, 128, 128, 0.39);
-		height: 180px;
-		margin-left: 620px;
-		margin-top: 0;
-		margin-bottom: 0;
-	}
-
-
-	section#contact {
-		background-color: #212529;
-		background-image: url("./img/map-image.png");
-		background-repeat: no-repeat;
-		background-position: center;
-		margin-top: 600px;
-	  }
-	  section#contact .section-heading {
-		color: #fff;
-	  }
-	
-	
-	  
-	  .footer {
-		text-align: center;
-		font-size: 0.9rem;
-		font-family: "Montserrat", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
-	  }
-
-.some-doctors{
-	width: 250px;
-	height: 280px;
+.some-doctors {
+  width: 250px;
+  height: 280px;
 }
 
-.login{
-	border: 1px solid whitesmoke;
-	background-color: whitesmoke;
-	padding-bottom: 10px;
-	margin-top: 50px;
+.login {
+  border: 1px solid whitesmoke;
+  background-color: whitesmoke;
+  padding-bottom: 10px;
+  margin-top: 50px;
 }
 
-.nav{
-	overflow: hidden;
-	color: white;
+.nav {
+  overflow: hidden;
+  color: white;
 }
 
-.list-group{
-	background-image: linear-gradient( 100deg,  #4ce92588 10%, #f0f1ee85 100%);
-	border: 2px solid green;
-	margin-left: 20%;
-	margin-right: 20%;
+.list-group {
+  background-image: linear-gradient(100deg, #4ce92588 10%, #f0f1ee85 100%);
+  border: 2px solid green;
+  margin-left: 20%;
+  margin-right: 20%;
 }
