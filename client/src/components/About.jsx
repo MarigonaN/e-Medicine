@@ -11,7 +11,7 @@ class About extends Component {
           <div className="text-center">
             <h2
               className=" text-uppercase"
-              style={{ marginBottom: "8px", fontFamily: "cursive" }}
+              style={{ marginBottom: "100px", fontFamily: "cursive" }}
             >
               About
             </h2>
@@ -42,7 +42,7 @@ class About extends Component {
               <div className="timeline-image2">
                 <img className="rounded-circle img-fluid" src="" alt="" />
               </div>
-              <div className="timeline-panel2 vl2">
+              <div className="timeline-panel2 ">
                 <div>
                   <h4>October 2020</h4>
                   <h4>Phase Two Expansion</h4>

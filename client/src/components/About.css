@@ -1,4 +1,68 @@
-@media only screen and (max-width: 360px) {
+.timeline > li .timeline-image {
+  position: absolute;
+  z-index: 100;
+  left: 0;
+  width: 80px;
+
+  height: 80px;
+  margin-left: 0;
+  text-align: center;
+  color: white;
+  border: 7px solid rgba(0, 128, 0, 0.719);
+  border-radius: 100%;
+  background-color: rgba(128, 128, 128, 0.226);
+  background-image: url(https://image.freepik.com/free-photo/high-angle-laptop-desk-office_23-2148339332.jpg);
+  background-size: 240px;
+  background-repeat: no-repeat;
+}
+
+.timeline > li .timeline-panel {
+  float: left;
+  width: 41%;
+  padding: 0 20px 20px 30px;
+  text-align: right;
+  margin-bottom: 20px;
+  color: black;
+  padding: 0px 0px;
+}
+
+.timeline > li .timeline-image {
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  padding: 0px 0px;
+}
+
+.timeline > li.timeline-inverted > .timeline-panel {
+  float: right;
+  padding: 0 30px 20px 20px;
+  text-align: left;
+  padding: 0px 0px;
+}
+
+.timeline > li .timeline-image {
+  width: 170px;
+  height: 170px;
+  margin-left: -85px;
+  padding: 0px 0px;
+}
+.timeline > li .timeline-image h4 {
+  margin-top: 40px;
+}
+
+.vl {
+  height: 120px;
+}
+
+.vl3 {
+  border-right: 3px solid rgba(128, 128, 128, 0.39);
+  height: 180px;
+  margin-left: 620px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@media only screen and (max-width: 540px) {
   .timeline > li .timeline-image1 {
     position: absolute;
     z-index: 100;
@@ -45,16 +109,16 @@
   }
 
   .timeline > li .timeline-image1 {
-    left: 60%;
-    width: 70px;
-    height: 70px;
+    left: 62%;
+    width: 140px;
+    height: 140px;
     padding: 0px 0px;
   }
 
   .timeline > li .timeline-image2 {
     left: 1%;
-    width: 70px;
-    height: 70px;
+    width: 140px;
+    height: 140px;
     padding: 0px 0px;
   }
   .timeline > li.timeline-inverted1 > .timeline-panel1 {
@@ -69,18 +133,6 @@
     text-align: right;
   }
 
-  .timeline > li .timeline-image1 {
-    width: 140px;
-    height: 140px;
-
-    padding: 0px 0px;
-  }
-  .timeline > li .timeline-image2 {
-    width: 140px;
-    height: 140px;
-
-    padding: 0px 0px;
-  }
   .timeline > li .timeline-image1 h4 {
     margin-top: 40px;
   }
@@ -99,4 +151,264 @@
     margin-top: 0;
     margin-bottom: 0;
   } */
+}
+@media only screen and (max-width: 280px) {
+  .timeline > li .timeline-image1 {
+    position: absolute;
+    z-index: 100;
+
+    text-align: center;
+    color: white;
+    border: 7px solid rgba(0, 128, 0, 0.719);
+    border-radius: 100%;
+    background-color: rgba(128, 128, 128, 0.226);
+    background-image: url(https://image.freepik.com/free-photo/high-angle-laptop-desk-office_23-2148339332.jpg);
+    background-size: 150px;
+    background-repeat: no-repeat;
+  }
+  .timeline > li .timeline-image2 {
+    position: absolute;
+    z-index: 100;
+
+    text-align: center;
+    color: white;
+    border: 7px solid rgba(0, 128, 0, 0.719);
+    border-radius: 100%;
+    background-color: rgba(128, 128, 128, 0.226);
+    background-image: url(https://image.freepik.com/free-photo/high-angle-laptop-desk-office_23-2148339332.jpg);
+    background-size: 150px;
+    background-repeat: no-repeat;
+  }
+  .timeline > li .timeline-panel1 {
+    float: left;
+    width: 80%;
+
+    text-align: right;
+
+    margin-bottom: 40px;
+    color: black;
+    padding: 0px 0px;
+  }
+  .timeline > li .timeline-panel2 {
+    float: left;
+    width: 100%;
+
+    text-align: right;
+    margin-bottom: 20px;
+    color: black;
+    padding: 0px 0px;
+  }
+
+  .timeline > li.timeline-inverted1 > .timeline-panel1 {
+    float: left;
+
+    text-align: left;
+    padding: 0px 0px;
+  }
+  .timeline > li.timeline-inverted2 > .timeline-panel2 {
+    float: right;
+    padding-left: 14px;
+    text-align: right;
+  }
+
+  .timeline > li .timeline-image1 {
+    width: 100px;
+    height: 100px;
+
+    padding: 0px 0px;
+  }
+  .timeline > li .timeline-image2 {
+    width: 100px;
+    height: 100px;
+
+    padding: 0px 0px;
+  }
+  .timeline > li .timeline-image1 h4 {
+    margin-top: 40px;
+  }
+  .timeline > li .timeline-image2 h4 {
+    margin-top: 40px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .timeline > li .timeline-image1 {
+    position: absolute;
+    z-index: 100;
+
+    text-align: center;
+    color: white;
+    border: 7px solid rgba(0, 128, 0, 0.719);
+    border-radius: 100%;
+    background-color: rgba(128, 128, 128, 0.226);
+    background-image: url(https://image.freepik.com/free-photo/high-angle-laptop-desk-office_23-2148339332.jpg);
+    background-size: 290px;
+    background-repeat: no-repeat;
+  }
+  .timeline > li .timeline-image2 {
+    position: absolute;
+    z-index: 100;
+
+    text-align: center;
+    color: white;
+    border: 7px solid rgba(0, 128, 0, 0.719);
+    border-radius: 100%;
+    background-color: rgba(128, 128, 128, 0.226);
+    background-image: url(https://image.freepik.com/free-photo/high-angle-laptop-desk-office_23-2148339332.jpg);
+    background-size: 290px;
+    background-repeat: no-repeat;
+  }
+  .timeline > li .timeline-panel1 {
+    float: left;
+    width: 40%;
+
+    text-align: right;
+    margin-bottom: 10px;
+    color: black;
+    padding: 0px 0px;
+  }
+  .timeline > li .timeline-panel2 {
+    float: left;
+    width: 40%;
+
+    text-align: right;
+    margin-bottom: 20px;
+    color: black;
+    padding: 0px 0px;
+  }
+
+  .timeline > li .timeline-image1 {
+    left: 40%;
+    width: 200px;
+    height: 200px;
+    padding: 0px 0px;
+  }
+
+  .timeline > li .timeline-image2 {
+    left: 40%;
+    width: 200px;
+    height: 200px;
+    padding: 0px 0px;
+  }
+  .timeline > li.timeline-inverted1 > .timeline-panel1 {
+    float: left;
+
+    text-align: left;
+    padding: 0px 0px;
+  }
+  .timeline > li.timeline-inverted2 > .timeline-panel2 {
+    float: right;
+    padding-left: 0px;
+    text-align: right;
+  }
+
+  .timeline > li .timeline-image1 h4 {
+    margin-top: 40px;
+  }
+  .timeline > li .timeline-image2 h4 {
+    margin-top: 40px;
+  }
+
+  .vl {
+    height: 120px;
+  }
+
+  .vl3 {
+    border-right: 3px solid rgba(128, 128, 128, 0.39);
+    height: 180px;
+    margin-left: 52%;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .timeline > li .timeline-image1 {
+    position: absolute;
+    z-index: 100;
+
+    text-align: center;
+    color: white;
+    border: 7px solid rgba(0, 128, 0, 0.719);
+    border-radius: 100%;
+    background-color: rgba(128, 128, 128, 0.226);
+    background-image: url(https://image.freepik.com/free-photo/high-angle-laptop-desk-office_23-2148339332.jpg);
+    background-size: 290px;
+    background-repeat: no-repeat;
+  }
+  .timeline > li .timeline-image2 {
+    position: absolute;
+    z-index: 100;
+
+    text-align: center;
+    color: white;
+    border: 7px solid rgba(0, 128, 0, 0.719);
+    border-radius: 100%;
+    background-color: rgba(128, 128, 128, 0.226);
+    background-image: url(https://image.freepik.com/free-photo/high-angle-laptop-desk-office_23-2148339332.jpg);
+    background-size: 290px;
+    background-repeat: no-repeat;
+  }
+  .timeline > li .timeline-panel1 {
+    float: left;
+    width: 40%;
+
+    text-align: right;
+    margin-bottom: 10px;
+    color: black;
+    padding: 0px 0px;
+  }
+  .timeline > li .timeline-panel2 {
+    float: left;
+    width: 40%;
+
+    text-align: right;
+    margin-bottom: 20px;
+    color: black;
+    padding: 0px 0px;
+  }
+
+  .timeline > li .timeline-image1 {
+    left: 42%;
+    width: 200px;
+    height: 200px;
+    padding: 0px 0px;
+  }
+
+  .timeline > li .timeline-image2 {
+    left: 42%;
+    width: 200px;
+    height: 200px;
+    padding: 0px 0px;
+  }
+  .timeline > li.timeline-inverted1 > .timeline-panel1 {
+    float: left;
+
+    text-align: left;
+    padding: 0px 0px;
+  }
+  .timeline > li.timeline-inverted2 > .timeline-panel2 {
+    float: right;
+    padding-left: 0px;
+    text-align: right;
+  }
+
+  .timeline > li .timeline-image1 h4 {
+    margin-top: 40px;
+  }
+  .timeline > li .timeline-image2 h4 {
+    margin-top: 40px;
+  }
+
+  .vl {
+    height: 120px;
+  }
+
+  .vl3 {
+    border-right: 3px solid rgba(128, 128, 128, 0.39);
+    height: 180px;
+    margin-left: 52%;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 }
