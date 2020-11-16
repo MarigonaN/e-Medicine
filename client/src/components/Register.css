@@ -109,8 +109,8 @@
   animation-name: btn;
   border: #fff 1px solid;
   opacity: 0;
-  animation-duration: 1s;
-  animation-delay: 1s;
+  animation-duration: 2s;
+  animation-delay: 2s;
   animation-fill-mode: forwards;
 }
 @keyframes btn {

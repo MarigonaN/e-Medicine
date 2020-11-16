@@ -4,7 +4,7 @@ import TodoService from "../services/TodoServices";
 import Message from "../components/Message";
 import { AuthContext } from "../context/AuthContext";
 import Doctors from "./doctors/Doctors";
-import Modals from "./modals/Modals";
+
 import SecondNavbar from "./SecondNavbar";
 import Footer from "./Footer";
 
@@ -67,7 +67,11 @@ const Todos = (props) => {
             className="form-control"
             placeholder="Any suggestion"
           />
-          <button className="btn btn-lg btn-success btn-block" type="submit">
+          <button
+            className="btn btn-lg btn-block"
+            type="submit"
+            style={{ backgroundColor: "rgba(128, 128, 128, 0.226)" }}
+          >
             Submit
           </button>
         </form>

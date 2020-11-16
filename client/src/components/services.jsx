@@ -48,7 +48,7 @@ class Services extends Component {
             </p>
           </Col>
           <Col md={4}>
-            <Link to="/login">
+            <Link to="/todos">
               <FaUserNurse
                 id="doctor"
                 style={{ fontSize: "150px", color: "black" }}

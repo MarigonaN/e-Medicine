@@ -23,7 +23,7 @@ li:hover:not(.active) {
 li .active {
   color: white;
   font-weight: bolder;
-  background-color: #ff5722;
+  background-color: rgba(128, 128, 128, 0.226);
   text-decoration: none;
   border-radius: 0 0 75% 75% / 30%;
 }

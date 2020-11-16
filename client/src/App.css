@@ -14,12 +14,12 @@ header .overlay {
   padding: 50px;
   color: #fff;
 
-  background-image: linear-gradient(100deg, #ff5722 10%, #ff990038 100%);
+  background-image: linear-gradient(100deg, #174d09d2 10%, #f0f1ee6b 100%);
 }
 .overlay1 {
   color: #fff;
 
-  background-color: #ff5722;
+  background-image: linear-gradient(to right, #ff5722, #ff9800);
 }
 
 h1 {
@@ -72,7 +72,7 @@ p {
 }
 
 .list-group {
-  background-image: linear-gradient(100deg, #ff5722 10%, #ff990038 100%);
+  background-image: linear-gradient(to right, #ff5722, #ff9800);
   border: 2px solid #ff5722;
   margin-left: 20%;
   margin-right: 20%;
