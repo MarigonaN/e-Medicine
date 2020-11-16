@@ -20,7 +20,7 @@ const SecondNavbar = (props) => {
 
   const authenticatedNavbar = () => {
     return (
-      <div>
+      <div className="container-fluid">
         <Navbar bg="transparent" variant="transparent">
           <Link to="/">
             <img

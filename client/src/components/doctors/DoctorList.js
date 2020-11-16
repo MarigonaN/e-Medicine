@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import DoctorData from "./doctors.json";
 import Modal from "react-modal";
-import { Row, Col } from "react-bootstrap";
+import { Row, Col, Container } from "react-bootstrap";
 import { BiPlusMedical } from "react-icons/bi";
 import "./DoctorList.scss";
 Modal.setAppElement("#root");
@@ -9,32 +9,38 @@ function DoctorList() {
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [doctorIndex, setDoctorIndex] = useState(0);
   return (
-    <div>
-      <h3>Doctors</h3>
+    <div className="container-fluid">
+      <h3
+        className="display-4 mt-5 mb-5"
+        style={{ fontFamily: "cursive", textAlign: "center" }}
+      >
+        Doctors
+      </h3>
+
       <Row className="row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3">
         {DoctorData.map((doctorDetail, index) => {
           console.log("doctorDetail", doctorDetail);
           return (
             <div class="container" key={doctorDetail._id}>
-              <Col md={8}>
+              <Col md={12}>
                 <img
                   src={doctorDetail.picture}
                   className="image"
                   style={{ width: "250px" }}
                 ></img>
                 <p>
-                  {doctorDetail.name.first} {doctorDetail.name.last}
+                  {doctorDetail.name.first} {doctorDetail.name.last} &diams;
+                  {doctorDetail.title}
                 </p>
-                <div class="middle">
+                <p class="middle">
                   <BiPlusMedical
                     onClick={() => (
                       setModalIsOpen(true), setDoctorIndex(index)
                     )}
                     className="text"
                     size="50px"
-                    style={{ marginRight: "110px", marginBottom: "30px" }}
                   />
-                </div>
+                </p>
               </Col>
             </div>
           );
@@ -42,6 +48,7 @@ function DoctorList() {
       </Row>
 
       <Modal
+        id="modal"
         isOpen={modalIsOpen}
         onRequestClose={() => setModalIsOpen(false)}
         style={{
@@ -49,15 +56,62 @@ function DoctorList() {
             backgroundColor: "grey",
           },
           content: {
-            color: "orange",
+            color: "white",
           },
         }}
       >
-        <h2>Modal title</h2>
-        <p>{`${DoctorData[doctorIndex].name.first} ${DoctorData[doctorIndex].name.last}`}</p>
-        <div>
-          <button onClick={() => setModalIsOpen(false)}>Close</button>
-        </div>
+        <h2 className="display-4 text-center">Welcome to my About</h2>
+        <hr style={{ borderTop: "1px solid white", marginBottom: "50px" }}></hr>
+        <Row xs={2} md={2}>
+          <Col md={6}>
+            <Col className="d-inline-flex">
+              <p
+                className="mr-1"
+                id="showcaseName"
+              >{`${DoctorData[doctorIndex].greeting}`}</p>
+              <h3 id="showcaseName">
+                {" "}
+                {` ${DoctorData[doctorIndex].name.first} ${DoctorData[doctorIndex].name.last}, ${DoctorData[doctorIndex].age}years old`}
+              </h3>
+            </Col>
+
+            <Col>
+              <p id="showcaseName1">{`Job title: ${DoctorData[doctorIndex].title}`}</p>
+              <p id="showcaseName2">{`Company: ${DoctorData[doctorIndex].company}`}</p>
+            </Col>
+            <Col style={{ textAlign: "justify", lineHeight: "0" }}>
+              <h4 id="showcaseName3">Contact</h4>
+
+              <p id="showcaseName3">{`E-mail: ${DoctorData[doctorIndex].email}`}</p>
+              <p id="showcaseName4">{`Phone: ${DoctorData[doctorIndex].phone}`}</p>
+              <p id="showcaseName5">{`Address: ${DoctorData[doctorIndex].address}`}</p>
+            </Col>
+            <Col id="showcaseName5">
+              <h4>About</h4>
+              <p>{` ${DoctorData[doctorIndex].about}`}</p>
+            </Col>
+            <p className="text-muted">
+              Registered{` ${DoctorData[doctorIndex].registered}`}
+            </p>
+          </Col>
+          <Col md={6}>
+            <img
+              src={`${DoctorData[doctorIndex].picture}`}
+              style={{ width: "100%", height: "100%" }}
+            />
+          </Col>
+        </Row>
+        <Row>
+          <Col className="text-lg-right mt-3">
+            <button
+              className="btn btn-lg btn-block"
+              id="showcase4"
+              onClick={() => setModalIsOpen(false)}
+            >
+              Close
+            </button>
+          </Col>
+        </Row>
       </Modal>
     </div>
   );

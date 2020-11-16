@@ -1,6 +1,5 @@
 .container {
   position: relative;
-  width: 50%;
 }
 
 .image {
@@ -21,7 +20,9 @@
 
 .container:hover .middle {
   opacity: 1;
+  margin-left: 10px;
 
+  width: 260px;
   border: 1px solid rgba(254, 209, 54, 0.9);
 }
 .text {
@@ -34,4 +35,98 @@
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
+}
+#modal {
+  background-image: linear-gradient(to right, #ff5722, #ff9900ea) !important;
+}
+#showcaseName {
+  animation-name: content;
+  animation-duration: 3s;
+  position: relative;
+  animation-fill-mode: forwards;
+}
+@keyframes content {
+  0% {
+    left: -1000px;
+  }
+
+  100% {
+    left: 0;
+  }
+}
+#showcaseName1 {
+  animation-name: content;
+  animation-duration: 4s;
+  position: relative;
+  animation-fill-mode: forwards;
+}
+@keyframes content {
+  0% {
+    left: -1000px;
+  }
+
+  100% {
+    left: 0;
+  }
+}
+#showcaseName2 {
+  animation-name: content;
+  animation-duration: 5s;
+  position: relative;
+  animation-fill-mode: forwards;
+}
+@keyframes content {
+  0% {
+    left: -1000px;
+  }
+
+  100% {
+    left: 0;
+  }
+}
+
+#showcaseName3 {
+  animation-name: content;
+  animation-duration: 6s;
+  position: relative;
+  animation-fill-mode: forwards;
+}
+@keyframes content {
+  0% {
+    left: -1000px;
+  }
+
+  100% {
+    left: 0;
+  }
+}
+#showcaseName4 {
+  animation-name: content;
+  animation-duration: 7s;
+  position: relative;
+  animation-fill-mode: forwards;
+}
+@keyframes content {
+  0% {
+    left: -1000px;
+  }
+
+  100% {
+    left: 0;
+  }
+}
+#showcaseName5 {
+  animation-name: content;
+  animation-duration: 8s;
+  position: relative;
+  animation-fill-mode: forwards;
+}
+@keyframes content {
+  0% {
+    left: -1000px;
+  }
+
+  100% {
+    left: 0;
+  }
 }
