@@ -53,7 +53,7 @@ function DoctorList() {
         onRequestClose={() => setModalIsOpen(false)}
         style={{
           overlay: {
-            backgroundColor: "grey",
+            backgroundColor: "#404040",
           },
           content: {
             color: "white",

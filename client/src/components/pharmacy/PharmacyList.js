@@ -59,13 +59,52 @@ function PharmacyList() {
       >
         <h2 className="display-4 text-center">Welcome to my About</h2>
         <hr style={{ borderTop: "1px solid white", marginBottom: "50px" }}></hr>
+
         <Row xs={2} md={2}>
+          <Col md={6}>
+            <Col className="d-inline-flex">
+              <h3 id="showcaseName">
+                {" "}
+                {` ${PharmacyData[pharmacyIndex].name}`}
+              </h3>
+            </Col>
+
+            <Col style={{ textAlign: "justify", lineHeight: "0" }}>
+              <h4 id="showcaseName3">Contact</h4>
+
+              <p id="showcaseName3">{`E-mail: ${PharmacyData[pharmacyIndex].contactPoint.telephone}`}</p>
+
+              <p id="showcaseName4">{`Address: ${PharmacyData[pharmacyIndex].address.streetAddress} ${PharmacyData[pharmacyIndex].address.addressLocality} ${PharmacyData[pharmacyIndex].address.addressRegion}`}</p>
+            </Col>
+            <Col id="showcaseName5">
+              <h4>About</h4>
+              <p>{` ${PharmacyData[pharmacyIndex].description}`}</p>
+            </Col>
+            <p className="text-muted">
+              Registered{` ${PharmacyData[pharmacyIndex].openingHours}`}
+            </p>
+            <p className="text-muted">
+              Registered{` ${PharmacyData[pharmacyIndex].registered}`}
+            </p>
+          </Col>
+
           <Col md={6}>
             <img
               id="imageRadius"
               src={`${PharmacyData[pharmacyIndex].image}`}
               style={{ width: "100%", height: "100%" }}
             />
+          </Col>
+        </Row>
+        <Row>
+          <Col className="text-lg-right mt-3">
+            <button
+              className="btn btn-lg btn-block"
+              id="showcase4"
+              onClick={() => setModalIsOpen(false)}
+            >
+              Close
+            </button>
           </Col>
         </Row>
       </Modal>
