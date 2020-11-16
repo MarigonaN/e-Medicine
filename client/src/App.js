@@ -9,16 +9,14 @@ import Admin from "./components/Admin";
 import PrivateRoute from "./hocs/PrivateRoute";
 import UnPrivateRoute from "./hocs/UnPrivateRoute";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import Join from "./components/chat/Join";
-import Chat from "./components/chat/Chat";
+
 import Pharm from "./components/Pharm";
 function App() {
   return (
     <div className="App">
       <Router>
         <Route exact path="/" component={Home} />
-        <Route path="/join" component={Join} />
-        <Route path="/chat" component={Chat} />
+
         <UnPrivateRoute path="/login" component={Login} />
         <UnPrivateRoute path="/register" component={Register} />
 

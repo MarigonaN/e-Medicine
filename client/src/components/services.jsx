@@ -19,7 +19,7 @@ class Services extends Component {
 
         <Row className=" text-center mt-3">
           <Col md={4}>
-            <Link to="/login">
+            <Link to="/pharmacy">
               {" "}
               <MdLocalPharmacy
                 id="pharmacy"

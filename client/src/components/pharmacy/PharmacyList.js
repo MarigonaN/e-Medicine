@@ -70,7 +70,7 @@ function PharmacyList() {
             </Col>
 
             <Col style={{ textAlign: "justify", lineHeight: "0" }}>
-              <h4 id="showcaseName3">Contact</h4>
+              <h4 id="showcaseName2">Contact</h4>
 
               <p id="showcaseName3">{`E-mail: ${PharmacyData[pharmacyIndex].contactPoint.telephone}`}</p>
 
