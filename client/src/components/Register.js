@@ -41,14 +41,15 @@ const Register = (props) => {
       <Row>
         <Col md={6} className="left-side box">
           <img
+            className="mt-5"
             id="imageRotate"
             src="https://www.vippng.com/png/detail/344-3440080_colorful-abstract-triangle-pattern-png-and-vector-orange.png"
             style={{ width: "550px", backgroundColor: "transparent" }}
           />
-          <h1 className="display-1" id="showcase">
+          <h1 className="display-1 ml-5" id="showcase">
             Join Us
           </h1>
-          <h3 className="display-5" id="showcase2">
+          <h3 className="display-5 ml-5" id="showcase2">
             Happy to have you here!❤️
           </h3>
         </Col>

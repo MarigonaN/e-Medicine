@@ -96,6 +96,7 @@ function DoctorList() {
           </Col>
           <Col md={6}>
             <img
+              id="imageRadius"
               src={`${DoctorData[doctorIndex].picture}`}
               style={{ width: "100%", height: "100%" }}
             />
