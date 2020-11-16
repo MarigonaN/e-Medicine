@@ -10,6 +10,7 @@ class Home extends Component {
     return (
       <div>
         <Navbar />
+
         <div className="container-fluid">
           <Services />
           <About />

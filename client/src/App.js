@@ -13,7 +13,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import Pharm from "./components/Pharm";
 function App() {
   return (
-    <div className="App">
+    <div>
       <Router>
         <Route exact path="/" component={Home} />
 

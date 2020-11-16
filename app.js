@@ -1,13 +1,10 @@
 const express = require("express");
 const socketio = require("socket.io");
-const http = require("http");
-const cors = require("cors");
 
 const app = express();
+
 const cookieParser = require("cookie-parser");
 const mongoose = require("mongoose");
-const server = http.createServer(app);
-const io = socketio(server);
 
 app.use(cookieParser());
 app.use(express.json());
@@ -23,7 +20,7 @@ mongoose.connect(
 const userRouter = require("./routes/User");
 const router = require("./router");
 app.use("/user", userRouter);
-app.use(cors());
+
 app.use(router);
 app.listen(3003, () => {
   console.log("express server started");
