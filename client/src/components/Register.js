@@ -4,7 +4,7 @@ import Message from "./Message";
 import "./Register.css";
 import { Link } from "react-router-dom";
 
-import { Row, Col, Container } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 const Register = (props) => {
   const [user, setUser] = useState({ username: "", password: "", role: "" });
   const [message, setMessage] = useState(null);
@@ -44,13 +44,15 @@ const Register = (props) => {
             className="mt-5"
             id="imageRotate"
             src="https://www.vippng.com/png/detail/344-3440080_colorful-abstract-triangle-pattern-png-and-vector-orange.png"
+            alt="imgRotate"
             style={{ width: "550px", backgroundColor: "transparent" }}
           />
           <h1 className="display-1 ml-5" id="showcase">
             Join Us
           </h1>
+
           <h3 className="display-5 ml-5" id="showcase2">
-            Happy to have you here!❤️
+            Happy to have you here!<span>❤️</span>
           </h3>
         </Col>
         <Col md={6}>

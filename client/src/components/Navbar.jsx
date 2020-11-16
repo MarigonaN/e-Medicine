@@ -25,45 +25,39 @@ const Navbarr = (props) => {
         <Navbar bg="transparent" variant="transparent">
           <img
             src="https://dewey.tailorbrands.com/production/brand_version_mockup_image/15/4097908015_46ee0ad4-45ff-4c70-9a0e-48f1c172bf9d.png?cb=1605046547"
+            alt="logo"
             style={{ width: "180px", marginRight: "50px" }}
           ></img>
           <Nav className="mr-auto">
-            <Link to="/">
-              <Link to="/">
-                <li>
-                  <Nav.Link
-                    className="active"
-                    id="button"
-                    style={{ color: "white", fontWeight: "bold" }}
-                  >
-                    Home
-                  </Nav.Link>
-                </li>
-              </Link>
+            <Link
+              to="/"
+              className="active"
+              id="button"
+              style={{ color: "white", fontWeight: "bold" }}
+            >
+              <li>Home</li>
             </Link>
           </Nav>
-          <Nav.Link>
-            <Link to="/login">
-              <li
-                href="#login"
-                id="button"
-                style={{ color: "white", fontWeight: "bold" }}
-              >
-                Login
-              </li>
-            </Link>
-          </Nav.Link>
-          <Nav.Link>
-            <Link to="/register">
-              <li
-                href="#register"
-                id="button"
-                style={{ color: "white", fontWeight: "bold" }}
-              >
-                Register
-              </li>
-            </Link>
-          </Nav.Link>
+
+          <Link to="/login">
+            <li
+              href="#login"
+              id="button"
+              style={{ color: "white", fontWeight: "bold" }}
+            >
+              Login
+            </li>
+          </Link>
+
+          <Link to="/register">
+            <li
+              href="#register"
+              id="button"
+              style={{ color: "white", fontWeight: "bold" }}
+            >
+              Register
+            </li>
+          </Link>
         </Navbar>
       </>
     );
@@ -79,38 +73,29 @@ const Navbarr = (props) => {
           ></img>
 
           <Nav className="mr-auto">
-            <Link to="/">
-              <li>
-                <Nav.Link
-                  className="active"
-                  id="button"
-                  style={{ color: "white", fontWeight: "bold" }}
-                >
-                  Home
-                </Nav.Link>
-              </li>
+            <Link
+              to="/"
+              className="active"
+              id="button"
+              style={{ color: "white", fontWeight: "bold" }}
+            >
+              <li>Home</li>
             </Link>
-            <Link to="/todos">
-              <li>
-                <Nav.Link
-                  id="button"
-                  href="#doctors"
-                  style={{ color: "white", fontWeight: "bold" }}
-                >
-                  Doctors
-                </Nav.Link>
-              </li>
+            <Link
+              to="/todos"
+              id="button"
+              href="#doctors"
+              style={{ color: "white", fontWeight: "bold" }}
+            >
+              <li>Doctors</li>
             </Link>
-            <Link to="/pharmacy">
-              <li>
-                <Nav.Link
-                  id="button"
-                  href="#pharmacy"
-                  style={{ color: "white", fontWeight: "bold" }}
-                >
-                  Pharmacy
-                </Nav.Link>
-              </li>
+            <Link
+              to="/pharmacy"
+              id="button"
+              href="#pharmacy"
+              style={{ color: "white", fontWeight: "bold" }}
+            >
+              <li>Pharmacy</li>
             </Link>
           </Nav>
           {user.role === "admin" ? (

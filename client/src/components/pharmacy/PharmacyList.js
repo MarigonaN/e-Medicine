@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import PharmacyData from "./pharmacy.json";
 import Modal from "react-modal";
-import { Row, Col, Container } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 import { BiPlusMedical } from "react-icons/bi";
 
 Modal.setAppElement("#root");
@@ -21,15 +21,16 @@ function PharmacyList() {
         {PharmacyData.map((PharmacyDetail, index) => {
           console.log("PharmacyDetail", PharmacyDetail);
           return (
-            <div class="container" key={PharmacyDetail._id}>
+            <div className="container" key={PharmacyDetail._id}>
               <Col md={12}>
                 <img
                   src={PharmacyDetail.image}
+                  alt="pharmacy"
                   className="image"
                   style={{ width: "250px" }}
                 ></img>
                 <p>{PharmacyDetail.name}</p>
-                <p class="middle">
+                <p className="middle">
                   <BiPlusMedical
                     onClick={() => (
                       setModalIsOpen(true), setPharmacyIndex(index)
@@ -81,7 +82,7 @@ function PharmacyList() {
               <p>{` ${PharmacyData[pharmacyIndex].description}`}</p>
             </Col>
             <p className="text-muted">
-              Registered{` ${PharmacyData[pharmacyIndex].openingHours}`}
+              Working Hours{` ${PharmacyData[pharmacyIndex].openingHours}`}
             </p>
             <p className="text-muted">
               Registered{` ${PharmacyData[pharmacyIndex].registered}`}
@@ -92,6 +93,7 @@ function PharmacyList() {
             <img
               id="imageRadius"
               src={`${PharmacyData[pharmacyIndex].image}`}
+              alt="pharmacy"
               style={{ width: "100%", height: "100%" }}
             />
           </Col>

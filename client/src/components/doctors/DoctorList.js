@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import DoctorData from "./doctors.json";
 import Modal from "react-modal";
-import { Row, Col, Container } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 import { BiPlusMedical } from "react-icons/bi";
 import "./DoctorList.scss";
 Modal.setAppElement("#root");
@@ -21,10 +21,11 @@ function DoctorList() {
         {DoctorData.map((doctorDetail, index) => {
           console.log("doctorDetail", doctorDetail);
           return (
-            <div class="container" key={doctorDetail._id}>
+            <div className="container" key={doctorDetail._id}>
               <Col md={12}>
                 <img
                   src={doctorDetail.picture}
+                  alt="doctor"
                   className="image"
                   style={{ width: "250px" }}
                 ></img>
@@ -32,7 +33,7 @@ function DoctorList() {
                   {doctorDetail.name.first} {doctorDetail.name.last} &diams;
                   {doctorDetail.title}
                 </p>
-                <p class="middle">
+                <p className="middle">
                   <BiPlusMedical
                     onClick={() => (
                       setModalIsOpen(true), setDoctorIndex(index)
@@ -98,6 +99,7 @@ function DoctorList() {
             <img
               id="imageRadius"
               src={`${DoctorData[doctorIndex].picture}`}
+              alt="doctor"
               style={{ width: "100%", height: "100%" }}
             />
           </Col>
