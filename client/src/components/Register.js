@@ -120,7 +120,7 @@ const Register = (props) => {
                   paddingTop: "20px",
                 }}
               >
-                Log in here!!!
+                Already have an account. Log in here!!!
               </h5>
             </Link>
           </div>

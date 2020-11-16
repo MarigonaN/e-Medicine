@@ -101,6 +101,17 @@ const Navbarr = (props) => {
                 </Nav.Link>
               </li>
             </Link>
+            <Link to="/pharmacy">
+              <li>
+                <Nav.Link
+                  id="button"
+                  href="#pharmacy"
+                  style={{ color: "white", fontWeight: "bold" }}
+                >
+                  Pharmacy
+                </Nav.Link>
+              </li>
+            </Link>
           </Nav>
           {user.role === "admin" ? (
             <Link to="/admin">

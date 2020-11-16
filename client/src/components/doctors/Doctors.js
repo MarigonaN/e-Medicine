@@ -1,24 +1,18 @@
-import React, { Component } from 'react';
-import DoctorList from './DoctorList'
-import Modal from 'react-modal'
+import React, { Component } from "react";
+import DoctorList from "./DoctorList";
+
 class Doctors extends Component {
-   state = {
-       doctors: []
-   }
-    
-    render() {
-      
-        return(
-       <>
-       <DoctorList />
-       
-         
+  state = {
+    doctors: [],
+  };
 
-     
-       </>
-        )
-}
-
+  render() {
+    return (
+      <>
+        <DoctorList />
+      </>
+    );
+  }
 }
 
 export default Doctors;

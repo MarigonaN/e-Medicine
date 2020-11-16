@@ -1,0 +1,74 @@
+[
+  {
+    "_id": "caa4f337-ecf0-4746-82cf-63b6a49c1183",
+    "@type": "Pharmacy",
+    "name": "Med",
+    "image": "https://images.unsplash.com/photo-1494548162494-384bba4ab999?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80",
+    "description": "kjjjjjjjjjjjjjjjjjjjjjjjjafkifehoqifo",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "89 North Bishop Street Fairmont, WV 26554",
+      "addressLocality": "Berlin",
+      "addressRegion": "Germany"
+    },
+    "openingHours": "Mo, Tu, We, Th, Fr, Sa 08:00-19:00",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "937-298-3253"
+    }
+  },
+  {
+    "_id": "7aabca83-1fb7-4edc-a4bf-b97f2191d1ab",
+    "@type": "Pharmacy",
+    "name": "Bio-Pharm",
+    "image": "https://images.unsplash.com/photo-1494548162494-384bba4ab999?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80",
+    "description": "kjjjjjjjjjjjjjjjjjjjjjjjjafkifehoqifo",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "89 North Bishop Street Fairmont, WV 26554",
+      "addressLocality": "Berlin",
+      "addressRegion": "Germany"
+    },
+    "openingHours": "Mo, Tu, We, Th, Fr, Sa 08:00-19:00",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "937-298-3253"
+    }
+  },
+  {
+    "_id": "5f1b9afd-3d3e-4739-b5dc-2c36457c1d31",
+    "@type": "Pharmacy",
+    "name": "Green-Pharm",
+    "image": "https://images.unsplash.com/photo-1494548162494-384bba4ab999?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80",
+    "description": "kjjjjjjjjjjjjjjjjjjjjjjjjafkifehoqifo",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "89 North Bishop Street Fairmont, WV 26554",
+      "addressLocality": "Berlin",
+      "addressRegion": "Germany"
+    },
+    "openingHours": "Mo, Tu, We, Th, Fr, Sa 08:00-19:00",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "937-298-3253"
+    }
+  },
+  {
+    "_id": "0e366ac2-8e2e-434a-b267-cbcee3a10763",
+    "@type": "Pharmacy",
+    "name": "Medical",
+    "image": "https://images.unsplash.com/photo-1494548162494-384bba4ab999?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80",
+    "description": "kjjjjjjjjjjjjjjjjjjjjjjjjafkifehoqifo",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "89 North Bishop Street Fairmont, WV 26554",
+      "addressLocality": "Berlin",
+      "addressRegion": "Germany"
+    },
+    "openingHours": "Mo, Tu, We, Th, Fr, Sa 08:00-19:00",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "937-298-3253"
+    }
+  }
+]

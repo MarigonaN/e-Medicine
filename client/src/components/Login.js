@@ -74,7 +74,7 @@ const Login = (props) => {
                   paddingTop: "20px",
                 }}
               >
-                Register here!!!
+                I don't have an account. Register here!!!
               </h5>
             </Link>
           </div>

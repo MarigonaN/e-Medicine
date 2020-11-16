@@ -49,7 +49,6 @@ const SecondNavbar = (props) => {
               <li className="active">
                 {" "}
                 <Nav.Link
-                  className="active"
                   id="button"
                   href="#doctors"
                   style={{
@@ -59,6 +58,22 @@ const SecondNavbar = (props) => {
                   }}
                 >
                   Doctors
+                </Nav.Link>{" "}
+              </li>{" "}
+            </Link>
+            <Link to="/pharmacy">
+              <li>
+                {" "}
+                <Nav.Link
+                  id="button"
+                  href="#pharmacy"
+                  style={{
+                    color: "white",
+                    fontWeight: "bold",
+                    backgroundColor: "",
+                  }}
+                >
+                  Pharmacy
                 </Nav.Link>{" "}
               </li>{" "}
             </Link>

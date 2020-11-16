@@ -11,7 +11,7 @@ import UnPrivateRoute from "./hocs/UnPrivateRoute";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Join from "./components/chat/Join";
 import Chat from "./components/chat/Chat";
-
+import Pharm from "./components/Pharm";
 function App() {
   return (
     <div className="App">
@@ -26,6 +26,11 @@ function App() {
           path="/todos"
           roles={["user", "admin"]}
           component={Todos}
+        />
+        <PrivateRoute
+          path="/pharmacy"
+          roles={["user", "admin"]}
+          component={Pharm}
         />
 
         <PrivateRoute path="/admin" roles={["admin"]} component={Admin} />

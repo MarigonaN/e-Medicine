@@ -1,33 +1,31 @@
 import React, { useState, useContext, useEffect } from "react";
-import TodoItem from "./TodoItem";
-import TodoService from "../services/TodoServices";
-import Message from "../components/Message";
+import PharmItem from "./PharmItem";
+import PharmService from "../services/PharmServices";
 import { AuthContext } from "../context/AuthContext";
-import Doctors from "./doctors/Doctors";
-
+import Pharmacy from "./pharmacy/Pharmacy";
 import SecondNavbar from "./SecondNavbar";
 import Footer from "./Footer";
-
-const Todos = (props) => {
-  const [todo, setTodo] = useState({ name: "" });
-  const [todos, setTodos] = useState([]);
+import Message from "./Message";
+const Pharm = (props) => {
+  const [pharm, setPharm] = useState({ name: "" });
+  const [pharms, setPharms] = useState([]);
   const [message, setMessage] = useState(null);
   const authContext = useContext(AuthContext);
 
   useEffect(() => {
-    TodoService.getTodos().then((data) => {
-      setTodos(data.todos);
+    PharmService.getPharms().then((data) => {
+      setPharm(data.pharms);
     });
   }, []);
 
   const onSubmit = (e) => {
     e.preventDefault();
-    TodoService.postTodo(todo).then((data) => {
+    PharmService.postPharm(pharm).then((data) => {
       const { message } = data;
       resetForm();
       if (!message.msgError) {
-        TodoService.getTodos().then((getData) => {
-          setTodos(getData.todos);
+        PharmService.getPharms().then((getData) => {
+          setPharms(getData.pharms);
           setMessage(message);
         });
       } else if (message.msgBody === "UnAuthorised") {
@@ -41,29 +39,28 @@ const Todos = (props) => {
   };
 
   const onChange = (e) => {
-    setTodo({ name: e.target.value });
+    setPharm({ name: e.target.value });
   };
   const resetForm = () => {
-    setTodo({ name: "" });
+    setPharm({ name: "" });
   };
   return (
     <div>
       <SecondNavbar />
 
-      <Doctors />
-
+      <Pharmacy />
       <div className="list-group">
         <div style={{ color: "black", marginLeft: "20px", marginTop: "20px" }}>
-          {todos.map((todo) => {
-            return <TodoItem key={todo._id} todo={todo} />;
+          {pharms.map((pharm) => {
+            return <PharmItem key={pharm._id} pharm={pharm} />;
           })}
         </div>
         <br></br>
         <form onSubmit={onSubmit} className="submitForm">
           <input
             type="text"
-            name="todo"
-            value={todo.name}
+            name="pharm"
+            value={pharm.name}
             onChange={onChange}
             className="form-control"
             placeholder="Any suggestion"
@@ -83,4 +80,4 @@ const Todos = (props) => {
   );
 };
 
-export default Todos;
+export default Pharm;

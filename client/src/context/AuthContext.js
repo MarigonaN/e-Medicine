@@ -20,7 +20,12 @@ export default ({ children }) => {
     <div>
       {!isLoaded ? (
         <h1>
-          <VscLoading style={{ marginLeft: "50%", marginTop: "30%" }} />
+          <VscLoading
+            style={{
+              marginLeft: "50%",
+              marginTop: "30%",
+            }}
+          />
         </h1>
       ) : (
         <AuthContext.Provider
