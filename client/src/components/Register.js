@@ -2,7 +2,8 @@ import React, { useState, useRef, useEffect } from "react";
 import AuthService from "../services/AuthService";
 import Message from "./Message";
 import "./Register.css";
-import { AiOutlineUserAdd } from "react-icons/ai";
+import { Link } from "react-router-dom";
+
 import { Row, Col, Container } from "react-bootstrap";
 const Register = (props) => {
   const [user, setUser] = useState({ username: "", password: "", role: "" });
@@ -40,6 +41,7 @@ const Register = (props) => {
       <Row>
         <Col md={6} className="left-side box">
           <img
+            id="imageRotate"
             src="https://www.vippng.com/png/detail/344-3440080_colorful-abstract-triangle-pattern-png-and-vector-orange.png"
             style={{ width: "550px", backgroundColor: "transparent" }}
           />
@@ -109,6 +111,17 @@ const Register = (props) => {
               </button>
             </form>
             {message ? <Message message={message} /> : null}
+            <Link to="/login" style={{ textDecoration: "none" }}>
+              {" "}
+              <h5
+                style={{
+                  color: "white",
+                  paddingTop: "20px",
+                }}
+              >
+                Log in here!!!
+              </h5>
+            </Link>
           </div>
         </Col>
       </Row>

@@ -34,6 +34,7 @@ const SecondNavbar = (props) => {
                 {" "}
                 <Nav.Link
                   href="#home"
+                  id="button"
                   style={{
                     color: "white",
                     fontWeight: "bold",
@@ -49,6 +50,7 @@ const SecondNavbar = (props) => {
                 {" "}
                 <Nav.Link
                   className="active"
+                  id="button"
                   href="#doctors"
                   style={{
                     color: "white",
@@ -65,6 +67,7 @@ const SecondNavbar = (props) => {
             <Link to="/admin">
               <li
                 className="active"
+                id="button"
                 href="#admin"
                 style={{ color: "white", fontWeight: "bold" }}
               >
@@ -77,6 +80,7 @@ const SecondNavbar = (props) => {
             <Link to="/">
               <button
                 type="button"
+                id="button"
                 className="btn btn-link nav-link"
                 onClick={onClickLogoutHandler}
                 style={{

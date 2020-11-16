@@ -33,6 +33,7 @@ const Navbarr = (props) => {
                 <li>
                   <Nav.Link
                     className="active"
+                    id="button"
                     style={{ color: "white", fontWeight: "bold" }}
                   >
                     Home
@@ -43,7 +44,11 @@ const Navbarr = (props) => {
           </Nav>
           <Nav.Link>
             <Link to="/login">
-              <li href="#login" style={{ color: "white", fontWeight: "bold" }}>
+              <li
+                href="#login"
+                id="button"
+                style={{ color: "white", fontWeight: "bold" }}
+              >
                 Login
               </li>
             </Link>
@@ -52,6 +57,7 @@ const Navbarr = (props) => {
             <Link to="/register">
               <li
                 href="#register"
+                id="button"
                 style={{ color: "white", fontWeight: "bold" }}
               >
                 Register
@@ -77,6 +83,7 @@ const Navbarr = (props) => {
               <li>
                 <Nav.Link
                   className="active"
+                  id="button"
                   style={{ color: "white", fontWeight: "bold" }}
                 >
                   Home
@@ -86,6 +93,7 @@ const Navbarr = (props) => {
             <Link to="/todos">
               <li>
                 <Nav.Link
+                  id="button"
                   href="#doctors"
                   style={{ color: "white", fontWeight: "bold" }}
                 >
@@ -96,7 +104,7 @@ const Navbarr = (props) => {
           </Nav>
           {user.role === "admin" ? (
             <Link to="/admin">
-              <li className="active" href="#admin">
+              <li className="active" href="#admin" id="button">
                 Admin
               </li>
             </Link>
@@ -106,6 +114,7 @@ const Navbarr = (props) => {
               <button
                 type="button"
                 className="btn btn-link nav-link"
+                id="button"
                 onClick={onClickLogoutHandler}
                 style={{ color: "white", fontWeight: "bold" }}
               >

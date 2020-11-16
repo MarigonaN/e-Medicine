@@ -16,6 +16,7 @@ class Footer extends Component {
               <div className="col-lg-6 my-3 my-lg-0">
                 <a
                   className="btn btn-dark btn-social mx-2"
+                  id="button"
                   href="https://github.com/MarigonaN"
                   target="_blank"
                 >
@@ -23,6 +24,7 @@ class Footer extends Component {
                 </a>
                 <a
                   className="btn btn-dark btn-social mx-2"
+                  id="button"
                   href="https://www.linkedin.com/in/marigona-nuhija-02275a173/"
                   target="_blank"
                 >
@@ -30,6 +32,7 @@ class Footer extends Component {
                 </a>
                 <a
                   className="btn btn-dark btn-social mx-2"
+                  id="button"
                   href="https://mail.google.com/mail/u/0/#inbox"
                   target="_blank"
                 >
