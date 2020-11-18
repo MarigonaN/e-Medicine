@@ -5,7 +5,7 @@ const http = require("http");
 const cors = require("cors");
 require("dotenv").config();
 const app = express();
-
+const pass = require("./passport");
 const cookieParser = require("cookie-parser");
 const mongoose = require("mongoose");
 const server = http.createServer(app);
