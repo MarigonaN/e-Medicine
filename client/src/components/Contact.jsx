@@ -13,7 +13,7 @@ class Contact extends Component {
               Contact Us
             </h2>
             <h3 className="section-subheading text-muted">
-              Lorem ipsum dolor sit amet consectetur.
+              How can we help you?
             </h3>
           </div>
           <form id="contactForm" name="sentMessage" noValidate="novalidate">

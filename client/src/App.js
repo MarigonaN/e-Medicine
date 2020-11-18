@@ -11,12 +11,13 @@ import UnPrivateRoute from "./hocs/UnPrivateRoute";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
 import Pharm from "./components/Pharm";
+import Covid19 from "./components/animations/Covid19";
 function App() {
   return (
     <div>
       <Router>
         <Route exact path="/" component={Home} />
-
+        <UnPrivateRoute path="/Covid19" component={Covid19} />
         <UnPrivateRoute path="/login" component={Login} />
         <UnPrivateRoute path="/register" component={Register} />
 

@@ -50,3 +50,7 @@ li .nav {
     0 17px 500px 0 rgba(0, 0, 0, 0.19);
   font-size: 18px;
 }
+.container-fluid {
+  padding-left: 0px !important;
+  padding-right: 0px !important ;
+}

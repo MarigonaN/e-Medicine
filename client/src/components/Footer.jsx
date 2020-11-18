@@ -6,7 +6,7 @@ import "./Contact.css";
 class Footer extends Component {
   render() {
     return (
-      <>
+      <div className="container">
         <footer className="footer py-4">
           <div className="container-fluid">
             <div className="row align-items-center">
@@ -54,7 +54,7 @@ class Footer extends Component {
             </div>
           </div>
         </footer>
-      </>
+      </div>
     );
   }
 }

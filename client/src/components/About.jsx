@@ -5,7 +5,7 @@ class About extends Component {
     return (
       <>
         <div
-          className="mt-5"
+          className="container mt-5"
           style={{ paddingTop: "80px", paddingBottom: "50px" }}
         >
           <div className="text-center">
@@ -23,16 +23,16 @@ class About extends Component {
               </div>
               <div className=" timeline-panel1 vl">
                 <div>
-                  <h4>July 2020</h4>
-                  <h4>Transition to Full Service</h4>
+                  <h4>November 2020</h4>
+                  <h4>End of this Web</h4>
                 </div>
 
                 <div>
                   <p className="text-muted">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Sunt ut voluptatum eius sapiente, totam reiciendis
-                    temporibus qui quibusdam, recusandae sit vero unde, sed,
-                    incidunt et ea quo dolore laudantium consectetur!
+                    My name is Marigona. I am a web developer. My goal in
+                    building this website is to make it easier for people to
+                    find the nearest professional doctors, pharmacies and
+                    hospitals. I hope you find this web usable!!!
                   </p>
                 </div>
               </div>
@@ -44,15 +44,15 @@ class About extends Component {
               </div>
               <div className="timeline-panel2 ">
                 <div>
-                  <h4>October 2020</h4>
-                  <h4>Phase Two Expansion</h4>
+                  <h4>April 2020</h4>
+                  <h4>My Best Decision in life</h4>
                 </div>
                 <div>
                   <p className="text-muted">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Sunt ut voluptatum eius sapiente, totam reiciendis
-                    temporibus qui quibusdam, recusandae sit vero unde, sed,
-                    incidunt et ea quo dolore laudantium consectetur!
+                    And ... it all started here. The place that made me call
+                    myself a web developer. The place where the desire and will
+                    to learn is never lost. Happy to be part of this 6-month
+                    challenge.
                   </p>
                 </div>
               </div>

@@ -37,6 +37,14 @@ const Navbarr = (props) => {
             >
               <li>Home</li>
             </Link>
+            <Link
+              to="/Covid19"
+              className="active"
+              id="button"
+              style={{ color: "white", fontWeight: "bold" }}
+            >
+              <li>Covid19</li>
+            </Link>
           </Nav>
 
           <Link to="/login">
@@ -81,6 +89,7 @@ const Navbarr = (props) => {
             >
               <li>Home</li>
             </Link>
+
             <Link
               to="/todos"
               id="button"
