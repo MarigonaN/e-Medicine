@@ -10,6 +10,7 @@ class Services extends Component {
       <div className="container services" style={{ paddingTop: "70px" }}>
         <div className="text-center">
           <h2
+            id="A1"
             className="section-heading text-uppercase mt-5 "
             style={{ marginBottom: "100px", fontFamily: "cursive" }}
           >
@@ -18,7 +19,7 @@ class Services extends Component {
         </div>
 
         <Row className=" text-center mt-3">
-          <Col md={4}>
+          <Col md={4} id="A2">
             <Link to="/pharmacy">
               {" "}
               <MdLocalPharmacy
@@ -38,7 +39,7 @@ class Services extends Component {
               reputation as a community health care professional.
             </p>
           </Col>
-          <Col md={4}>
+          <Col md={4} id="A3">
             <Link to="/login">
               <FaHospitalAlt
                 id="hospital"
@@ -57,7 +58,7 @@ class Services extends Component {
               mankind.
             </p>
           </Col>
-          <Col md={4}>
+          <Col md={4} id="A4">
             <Link to="/todos">
               <FaUserNurse
                 id="doctor"

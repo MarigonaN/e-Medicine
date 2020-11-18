@@ -21,7 +21,7 @@ const Navbarr = (props) => {
 
   const unauthenticatedNavbar = () => {
     return (
-      <>
+      <div className="container-fluid">
         <Navbar bg="transparent" variant="transparent">
           <img
             src="https://dewey.tailorbrands.com/production/brand_version_mockup_image/15/4097908015_46ee0ad4-45ff-4c70-9a0e-48f1c172bf9d.png?cb=1605046547"
@@ -67,13 +67,13 @@ const Navbarr = (props) => {
             </li>
           </Link>
         </Navbar>
-      </>
+      </div>
     );
   };
 
   const authenticatedNavbar = () => {
     return (
-      <>
+      <div className="container-fluid">
         <Navbar bg="transparent" variant="transparent" className="nav">
           <img
             src="https://dewey.tailorbrands.com/production/brand_version_mockup_image/15/4097908015_46ee0ad4-45ff-4c70-9a0e-48f1c172bf9d.png?cb=1605046547"
@@ -128,11 +128,11 @@ const Navbarr = (props) => {
             </li>
           </Link>
         </Navbar>
-      </>
+      </div>
     );
   };
   return (
-    <header>
+    <header className="container-fluid">
       <div className="overlay">
         <ul>
           {!isAuthenticated ? unauthenticatedNavbar() : authenticatedNavbar()}

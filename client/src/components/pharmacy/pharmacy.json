@@ -4,7 +4,7 @@
     "@type": "Pharmacy",
     "name": "Med Pharm",
     "image": "https://images.vexels.com/media/users/3/208783/isolated/preview/12dc38d91a6e545c514a33dc2757a2b2-first-to-the-scene-paramedic-by-vexels.png",
-    "description": "If you're prescribed a medicine to treat a long-term condition for the first time, you may be able to get extra help and advice about your medicine from your local pharmacist through a free scheme called the New Medicine Service (NMS).People often have problems when they start a new medicine. As part of the scheme, the pharmacist will support you over several weeks to use the medicine safely and to best effect. The service is only available to people using certain medicines. In some cases where there's a problem and a solution cannot be found between you and the pharmacist, you'll be referred back to your doctor.",
+    "description": "If you're prescribed a medicine to treat a long-term condition for the first time, you may be able to get extra help and advice about your medicine from your local pharmacist through a free scheme called the New Medicine Service (NMS).People often have problems when they start a new medicine. As part of the scheme, the pharmacist will support you over several weeks to use the medicine safely and to best effect.  In some cases where there's a problem and a solution cannot be found between you and the pharmacist, you'll be referred back to your doctor.",
     "registered": "Saturday, August 15, 2020 6:19 PM",
     "address": {
       "@type": "PostalAddress",

@@ -6,6 +6,7 @@ class About extends Component {
       <>
         <div
           className="container mt-5"
+          id="fadex"
           style={{ paddingTop: "80px", paddingBottom: "50px" }}
         >
           <div className="text-center">
@@ -18,7 +19,7 @@ class About extends Component {
           </div>
           <ul className=" timeline mt-5">
             <li className="timeline-inverted1">
-              <div className="timeline-image1">
+              <div className="timeline-image1" id="hoverr">
                 <img className="rounded-circle img-fluid" src="" alt="" />
               </div>
               <div className=" timeline-panel1 vl">
@@ -39,7 +40,7 @@ class About extends Component {
             </li>
             <li className="vl3"></li>
             <li className="timeline-inverted2">
-              <div className="timeline-image2">
+              <div className="timeline-image2" id="hoverr">
                 <img className="rounded-circle img-fluid" src="" alt="" />
               </div>
               <div className="timeline-panel2 ">

@@ -100,10 +100,9 @@ const Register = (props) => {
               <input
                 type="text"
                 name="role"
-                value={user.role}
                 onChange={onChange}
                 className="form-control mt-1"
-                placeholder="Enter role (admin/user)"
+                placeholder="Enter role (user)"
               />
               <button
                 className="btn btn-lg btn-block"
