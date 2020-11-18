@@ -13,13 +13,7 @@ const io = socketio(server);
 
 app.use(cookieParser());
 app.use(express.json());
-mongoose.connect(
-  process.env.MONGOHOST,
-  { useNewUrlParser: true, useUnifiedTopology: true },
-  () => {
-    console.log("successfully connected to databasee");
-  }
-);
+
 const userRouter = require("./routes/User");
 const router = require("./router");
 app.use("/user", userRouter);
@@ -27,6 +21,13 @@ app.use(cors());
 console.log(listEndpoints(app));
 
 app.use(router);
+mongoose.connect(
+  process.env.MONGOHOST,
+  { useNewUrlParser: true, useUnifiedTopology: true },
+  () => {
+    console.log("successfully connected to databasee");
+  }
+);
 app.listen(process.env.PORT, () => {
   console.log("express server started");
 });
