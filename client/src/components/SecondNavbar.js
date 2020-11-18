@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import AuthService from "../services/AuthService";
 import { AuthContext } from "../context/AuthContext";
 import { Navbar, Nav } from "react-bootstrap";
-import "../App.css";
+import "./SecondNavbar.css";
 const SecondNavbar = (props) => {
   const { isAuthenticated, user, setIsAuthenticated, setUser } = useContext(
     AuthContext
@@ -20,7 +20,7 @@ const SecondNavbar = (props) => {
 
   const authenticatedNavbar = () => {
     return (
-      <div>
+      <div className="container-fluid">
         <Navbar bg="transparent" variant="transparent">
           <Link to="/">
             <img
@@ -101,10 +101,12 @@ const SecondNavbar = (props) => {
   };
 
   return (
-    <div className="overlay1">
-      <ul>
-        {!isAuthenticated ? authenticatedNavbar() : authenticatedNavbar()}
-      </ul>
+    <div className="container-fluid">
+      <div className="overlay1">
+        <ul>
+          {!isAuthenticated ? authenticatedNavbar() : authenticatedNavbar()}
+        </ul>
+      </div>
     </div>
   );
 };

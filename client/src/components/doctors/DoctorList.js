@@ -9,7 +9,7 @@ function DoctorList() {
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [doctorIndex, setDoctorIndex] = useState(0);
   return (
-    <div className="container-fluid">
+    <div className="container">
       <h3
         className="display-4 mt-5 mb-5"
         style={{ fontFamily: "cursive", textAlign: "center" }}

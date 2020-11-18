@@ -16,11 +16,6 @@ header .overlay {
 
   background-image: linear-gradient(100deg, #174d09d2 10%, #f0f1ee6b 100%);
 }
-.overlay1 {
-  color: #fff;
-
-  background-image: linear-gradient(to right, #ff5722, #ff9800);
-}
 
 h1 {
   font-family: "Dancing Script", cursive;

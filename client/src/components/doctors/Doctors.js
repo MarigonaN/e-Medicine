@@ -8,9 +8,9 @@ class Doctors extends Component {
 
   render() {
     return (
-      <>
+      <div className="container-fluid">
         <DoctorList />
-      </>
+      </div>
     );
   }
 }

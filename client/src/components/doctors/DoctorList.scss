@@ -1,9 +1,6 @@
-.container {
-  position: relative;
-}
-
 .image {
   display: block;
+  height: auto;
 }
 
 .middle {
@@ -12,16 +9,17 @@
   bottom: 0;
   left: 0;
   right: 0;
+  width: 260px;
   height: 280px;
   opacity: 0;
   transition: 0.5s ease;
-  background-color: rgba(254, 209, 54, 0.9);
+  background-color: rgba(254, 211, 54, 0.952);
 }
 
-.container:hover .middle {
+.middle:hover {
   opacity: 1;
   margin-left: 10px;
-
+  height: 280px;
   width: 260px;
   border: 1px solid rgba(254, 209, 54, 0.9);
 }
@@ -40,12 +38,12 @@
   background-image: linear-gradient(to right, #ff5722, #ff9900ea) !important;
 }
 #showcaseName {
-  animation-name: content;
+  animation-name: content1;
   animation-duration: 3s;
   position: relative;
   animation-fill-mode: forwards;
 }
-@keyframes content {
+@keyframes content1 {
   0% {
     left: -1000px;
   }
@@ -55,12 +53,12 @@
   }
 }
 #showcaseName1 {
-  animation-name: content;
+  animation-name: content2;
   animation-duration: 4s;
   position: relative;
   animation-fill-mode: forwards;
 }
-@keyframes content {
+@keyframes content2 {
   0% {
     left: -1000px;
   }
@@ -70,12 +68,12 @@
   }
 }
 #showcaseName2 {
-  animation-name: content;
+  animation-name: content3;
   animation-duration: 5s;
   position: relative;
   animation-fill-mode: forwards;
 }
-@keyframes content {
+@keyframes content3 {
   0% {
     left: -1000px;
   }
@@ -86,12 +84,12 @@
 }
 
 #showcaseName3 {
-  animation-name: content;
+  animation-name: content4;
   animation-duration: 6s;
   position: relative;
   animation-fill-mode: forwards;
 }
-@keyframes content {
+@keyframes content4 {
   0% {
     left: -1000px;
   }
@@ -101,12 +99,12 @@
   }
 }
 #showcaseName4 {
-  animation-name: content;
+  animation-name: content5;
   animation-duration: 7s;
   position: relative;
   animation-fill-mode: forwards;
 }
-@keyframes content {
+@keyframes content5 {
   0% {
     left: -1000px;
   }
@@ -116,12 +114,12 @@
   }
 }
 #showcaseName5 {
-  animation-name: content;
+  animation-name: content6;
   animation-duration: 8s;
   position: relative;
   animation-fill-mode: forwards;
 }
-@keyframes content {
+@keyframes content6 {
   0% {
     left: -1000px;
   }

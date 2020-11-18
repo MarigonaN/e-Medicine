@@ -47,7 +47,7 @@ const Todos = (props) => {
     setTodo({ name: "" });
   };
   return (
-    <div>
+    <div className="container-fluid">
       <SecondNavbar />
 
       <Doctors />
