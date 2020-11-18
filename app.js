@@ -1,7 +1,7 @@
 const express = require("express");
-const socketio = require("socket.io");
 
 const app = express();
+const PORT = process.env.PORT || 8888;
 
 const cookieParser = require("cookie-parser");
 const mongoose = require("mongoose");
@@ -22,6 +22,10 @@ const router = require("./router");
 app.use("/user", userRouter);
 
 app.use(router);
-app.listen(3003, () => {
-  console.log("express server started");
-});
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static("client/build"));
+  app.get("*", (req, res) => {
+    res.sendFile(path.resolve(__dirname, "../client", "build", "index.html"));
+  });
+}
+app.listen(PORT, console.log("express server started at port ${PORT}"));
